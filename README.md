@@ -12,7 +12,7 @@ And htmx to load partials
 function init() {
     import('...js');
 }
-
+Tukalo
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
 let loadedPartialsCount = 0;
 
