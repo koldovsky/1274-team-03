@@ -30,3 +30,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Melnyk Sofia
 - Novostroinyi Dmytro
 - Volosheniuk Vladyslav
+- Semenchenko Andrii
