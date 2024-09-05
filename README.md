@@ -32,3 +32,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Volosheniuk Vladyslav
 - Semenchenko Andrii
 - Mykola Rad
+- Pavlo Tukalo
