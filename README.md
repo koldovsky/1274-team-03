@@ -33,3 +33,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Semenchenko Andrii
 - Mykola Rad
 - Pavlo Tukalo
+- Tsurkan Zoriana
