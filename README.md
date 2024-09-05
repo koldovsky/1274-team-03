@@ -28,3 +28,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Katsimon Serhii
 - Shulezhko Antony
 - Melnyk Sofia
+- Novostroinyi Dmytro
