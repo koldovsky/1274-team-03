@@ -31,3 +31,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Novostroinyi Dmytro
 - Volosheniuk Vladyslav
 - Semenchenko Andrii
+- Mykola Rad
