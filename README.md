@@ -27,3 +27,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Kostiantyn Pavlyk
 - Katsimon Serhii
 - Shulezhko Antony
+- Melnyk Sofia
