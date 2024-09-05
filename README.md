@@ -29,3 +29,6 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Shulezhko Antony
 - Melnyk Sofia
 - Novostroinyi Dmytro
+- Volosheniuk Vladyslav
+- Semenchenko Andrii
+- Mykola Rad
