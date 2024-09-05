@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Store Website</title>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="index.main.hero-slider.partial.html"
+    ></header>
+    <main class="main-content">
+      <h2 class="main-content__title">
+        <a class="main-content__link" href="index.html">Store homepage</a>
+      </h2>
+
+      <section class="product-navigation">
+        <div
+          class="product-navigation__button product-navigation__button--prev"
+        >
+          <button class="product-navigation__arrow-button">
+            <svg
+              width="20"
+              class="product-navigation__arrow-svg"
+              viewBox="0 0 30 30"
+            >
+              <defs>
+                <path
+                  d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"
+                  id="a-1725444667824"
+                ></path>
+              </defs>
+              <use
+                fill-rule="nonzero"
+                opacity=".8"
+                xlink:href="#a-1725444667824"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="product-navigation__image">
+          <a href="shop.html" class="product-navigation__link">
+            <img
+              class="product-navigation__img"
+              width="361"
+              src="img/section-trending-products/dora-metal-pet-brush.png"
+              alt="DORA Metal Pet Brush"
+            />
+          </a>
+        </div>
+
+        <div
+          class="product-navigation__button product-navigation__button--next"
+        >
+          <button class="product-navigation__arrow-button">
+            <svg
+              width="20"
+              class="product-navigation__arrow-svg"
+              viewBox="0 0 30 30"
+            >
+              <defs>
+                <path
+                  d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"
+                  id="a-1725444667824"
+                ></path>
+              </defs>
+              <use
+                fill-rule="nonzero"
+                opacity=".8"
+                xlink:href="#a-1725444667824"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <div class="product-preview">
+        <article class="product-preview__card">
+          <a href="shop.html" class="product-preview__link">
+            <img
+              class="product-preview__image"
+              width="92"
+              src="img/section-trending-products/dora-metal-pet-brush.png"
+              alt="DORA Metal Pet Brush"
+            />
+          </a>
+        </article>
+      </div>
+
+      <section class="product-details">
+        <p class="product-details__status">In stock</p>
+        <h3 class="product-details__name">DORA Metal Pet Brush</h3>
+        <p class="product-details__code">Product code 48</p>
+        <p class="product-details__price">$15,00</p>
+      </section>
+
+      <section class="quantity-selection">
+        <div class="quantity-selection__container">
+          <div class="quantity-selection__input-group">
+            <input class="quantity-selection__input" type="text" value="1" />
+            <div class="quantity-selection__arrows">
+              <svg
+                class="quantity-selection__arrow quantity-selection__arrow--up"
+                width="10"
+                height="6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.35.156a.474.474 0 00-.701 0L.111 5.264a.437.437 0 00-.111.29C0 5.8.207 6 .462 6h9.076c.11 0 .217-.038.3-.107a.435.435 0 00.05-.629L5.352.156z"
+                  fill="#9199AB"
+                ></path>
+              </svg>
+              <svg
+                class="quantity-selection__arrow quantity-selection__arrow--down"
+                width="10"
+                height="6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.35.156a.474.474 0 00-.701 0L.111 5.264a.437.437 0 00-.111.29C0 5.8.207 6 .462 6h9.076c.11 0 .217-.038.3-.107a.435.435 0 00.05-.629L5.352.156z"
+                  fill="#9199AB"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <button class="quantity-selection__add-to-cart">Add To Cart</button>
+        </div>
+      </section>
+
+      <section class="product-description">
+        <div class="product-description__button-container">
+          <button class="product-description__toggle">DESCRIPTION</button>
+        </div>
+        <p class="product-description__text">
+          This plastic carrier is large enough even for adult cats. We cannot
+          relieve pets of the stress of being carried outside, but we can make
+          it more comfortable, right?
+        </p>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
