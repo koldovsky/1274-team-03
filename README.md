@@ -25,3 +25,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 # Team Members
 - Anastasia Storozhenko
 - Kostiantyn Pavlyk
+- Katsimon Serhii
