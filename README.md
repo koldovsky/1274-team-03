@@ -26,3 +26,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Anastasia Storozhenko
 - Kostiantyn Pavlyk
 - Katsimon Serhii
+- Shulezhko Antony
