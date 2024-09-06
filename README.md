@@ -35,3 +35,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Pavlo Tukalo
 - Tsurkan Zoriana
 - Antipov Oleksandr
+- Rybitska Ivanna
