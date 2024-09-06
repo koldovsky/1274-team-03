@@ -36,3 +36,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Tsurkan Zoriana
 - Antipov Oleksandr
 - Rybitska Ivanna
+- Maksym Lytvynchuk
