@@ -34,3 +34,7 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Mykola Rad
 - Pavlo Tukalo
 - Tsurkan Zoriana
+- Antipov Oleksandr
+- Rybitska Ivanna
+- Maksym Lytvynchuk
+- Oleksandr Yieriemieiev
