@@ -1,23 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Store Website</title>
-    <link
-      rel="shortcut icon"
-      href="https://placekitten.com/96/139"
-      type="image/x-icon"
-    />
-    <script
-      src="https://unpkg.com/htmx.org@1.9.10"
-      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-
-  <body>
+    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
+    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+</head>
+<body>
     <header
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
@@ -30,6 +21,9 @@
             data-hx-get="index.first.main.section.banner1.partial.html"></section>
         <section data-hx-trigger="load" data-hx-swap="outerHTML"
             data-hx-get="index.first.main.section.banner2.partial.html"></section>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.main.section.banner.best-quality.partial.html"></section>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.main.section.banner.cat-dog-stuff.partial.html"></section>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.homepage.main-banner.partial.html"></section>
         <section data-hx-trigger="load" data-hx-swap="outerHTML"
             data-hx-get="index.main.section.any_products_for_any_pets.partial.html"></section>
         <section data-hx-trigger="load" data-hx-swap="outerHTML"
@@ -117,6 +111,16 @@
         data-hx-swap="outerHTML"
         data-hx-get="index.main.section.frequently-asked-questions.partial.html"
       ></section>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML"
+        data-hx-get="index.main.section-shop.partial.html"></section>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML"
+        data-hx-get="index.main.section.frequently-asked-questions.partial.html"></section>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML"
+        data-hx-get="index.main.section.our-contact-information-working-hours-and-location.partial.html"></section>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML"
+        data-hx-get="index.main.section.pets-product-discount.partial.html"></section>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML"
+        data-hx-get="index.main.section.promotion.partial.html"></section>
     </main>
     <footer
       data-hx-trigger="load"
