@@ -25,3 +25,16 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 # Team Members
 - Anastasia Storozhenko
 - Kostiantyn Pavlyk
+- Katsimon Serhii
+- Shulezhko Antony
+- Melnyk Sofia
+- Novostroinyi Dmytro
+- Volosheniuk Vladyslav
+- Semenchenko Andrii
+- Mykola Rad
+- Pavlo Tukalo
+- Tsurkan Zoriana
+- Antipov Oleksandr
+- Rybitska Ivanna
+- Maksym Lytvynchuk
+- Oleksandr Yieriemieiev
