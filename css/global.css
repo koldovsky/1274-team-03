@@ -9,14 +9,15 @@
   box-sizing: border-box;
 }
 
-:root {git
-  --text-color: #8a8783;
-  --text-tytle-color: black;
+:root {
+  --text-color: rgb(149, 139, 126);
+  --text-tytle-color: #3c3731;
   --button-color: #b2e7e9;
   --accent-text-color: #ed6435;
   --button-text-color: #45c1c7;
-  --font-family-text: "PT Sans", sans-serif; /*текст*/
-  --font-family-tytle: "Baloo 2", sans-serif; /*заголовки*/
+  --arrows-fone-color: #59534e;
+  font-family: "PT Sans", sans-serif;
+  --font-family-tytle: "Baloo 2", sans-serif;
   scroll-behavior: smooth;
 }
 
