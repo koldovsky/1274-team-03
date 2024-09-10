@@ -12,9 +12,11 @@
 :root {
   --text-color: rgb(149, 139, 126);
   --text-tytle-color: #3c3731;
-  --button-color: #b2e7e9;
-  --accent-text-color: #ed6435;
-  --button-text-color: #45c1c7;
+  --button-color: rgb(178, 231, 233);
+  --button-hover-color:#ffe6d4;
+  --accent-text-color: rgb(237, 100, 53);
+  --button-text-color: rgb(69, 193, 199);
+  --buttom-text-hover-color:#ed6435;
   --arrows-fone-color: #59534e;
   font-family: "PT Sans", sans-serif;
   --font-family-tytle: "Baloo 2", sans-serif;
