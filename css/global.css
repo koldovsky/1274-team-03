@@ -1,16 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root {
-    scroll-behavior: smooth;
+:root {git
+  --text-color: #8a8783;
+  --text-tytle-color: black;
+  --button-color: #b2e7e9;
+  --accent-text-color: #ed6435;
+  --button-text-color: #45c1c7;
+  --font-family-text: "PT Sans", sans-serif; /*текст*/
+  --font-family-tytle: "Baloo 2", sans-serif; /*заголовки*/
+  scroll-behavior: smooth;
 }
 
 img {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
