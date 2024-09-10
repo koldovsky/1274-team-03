@@ -10,7 +10,7 @@
       href="https://placekitten.com/96/139"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -57,11 +57,6 @@
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.main.section.pets-product-discount.partial.html"
-      ></section>
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
         data-hx-get="index.main.section.dry-food-treats.html"
       ></section>
       <section
@@ -85,7 +80,11 @@
         data-hx-get="index.main.section.best-producers-of-food.partial.html"
       ></section>
       <section><!--Testimonials by Our Clients--></section>
-      <section><!--Dry Food & Treats--></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main.section.pets-product-discount.partial.html"
+      ></section>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
