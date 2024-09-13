@@ -1,0 +1,122 @@
+.trending-products {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.trending-products__title {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: var(--font-family-tytle);
+  text-align: center;
+  color: vat(--text-tytle-color);
+}
+
+.trending-products__svg-container {
+  text-align: center;
+  font-weight: 400;
+  font-size: 17px;
+  margin-top: 25px;
+}
+
+.trending-products__description {
+  text-align: center;
+  font-size: 19px;
+  color: var(--text-color);
+  font-weight: 400;
+  margin-top: 20px;
+  line-height: 28.5px;
+}
+
+.trending-products__list {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.trending-products__items {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.product-card {
+  max-width: 688px;
+  min-width: 242px;
+}
+
+.trending-products__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10px;
+  z-index: 2
+}
+
+.trending-products__arrow-button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--arrows-fone-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0
+}
+
+.trending-products__button--prev {
+  position: relative;
+  left: 15px;
+  .trending-products__arrow-svg {
+    transform: rotate(180deg);
+    fill: white;
+  }
+}
+
+.trending-products__button--next {
+  position: relative;
+  right: 15px;
+  .trending-products__arrow-svg {
+    fill: white;
+  }
+}
+
+.product-card__link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.product-card__link:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+.product-card__name {
+  margin-top: 8px;
+}
+
+.product-card__price {
+  margin-top: 16px;
+  color: var(--accent-text-color);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (min-width: 765px) {
+  .trending-products__items{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 991px) {
+  .trending-products__items{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
