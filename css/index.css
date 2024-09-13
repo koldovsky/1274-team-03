@@ -1,17 +1,5 @@
+@import "global.css";
+@import "control.css";
 @import "our-news-and-articles.css";
-
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    scroll-behavior: smooth;
-}
-img {
-    display: block;
-    width: 100%;
-}
+@import "index.trending-products.css";
+@import "index.our-new-arrivals.css";

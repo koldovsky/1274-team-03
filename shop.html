@@ -10,30 +10,30 @@
       href="https://placekitten.com/96/139"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="css/shop.css" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
   </head>
-
   <body>
     <header
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
-      data-hx-get="index.main.hero-slider.partial.html"
+      data-hx-get="global.header.hero-slider.partial.html"
     ></header>
     <main>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.main.section-shop.partial.html"
+        data-hx-get="shop.main.section-shop.partial.html"
       ></section>
     </main>
     <footer
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
-      data-hx-get="index.global.footer.partial.html"
+      data-hx-get="global.footer.partial.html"
     ></footer>
   </body>
 </html>
