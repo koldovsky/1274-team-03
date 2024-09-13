@@ -1,3 +1,5 @@
 .banner__best-quality{
-    background-image: url(../img/section-best-quality/back-first.webp);
+    background-image: url(../img/section-best-quality/best-quality.webp);
+    min-height: 336px;
+
 }
