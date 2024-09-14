@@ -11,9 +11,9 @@
     color: var(--text-tytle-color);
 }
 .news__icon {
-    width: 30%;
-    height: 30%;
-    display: inline-block;
+    width: 10%;
+    height: 10%;
+    display: block;
     margin-top: 25px;
 }
 .news__subtitle{
