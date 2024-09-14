@@ -84,7 +84,6 @@
 }
 a:hover{
     color: var(--buttom-text-hover-color);
-    border-bottom-color: black;
 }
 
 @media screen and (max-width: 768px) {
