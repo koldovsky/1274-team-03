@@ -1,7 +1,7 @@
 .news {
     padding: 90px 20px 90px 20px;
 }
-.news__title{
+.news__main-title{
     max-width: 300px;
     margin: auto;
     font-size: 30px;
@@ -24,13 +24,6 @@
     font-family: "PT Sans", sans-serif;;
     color: var(--text-color);
 }
-.news__text{
-    margin-top: 20px;
-    font-size: 19px;
-    text-align: center;
-    font-family: "PT Sans", sans-serif;;
-    color: var(--text-color);
-}
 .news__image{
     width: 350px;
     height: 235px;
@@ -38,10 +31,26 @@
     align-items: center;
     justify-content: center;
 }
-.news__button{
+.news__title{
+    max-width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    font-family: var(--font-family-tytle);
+    color: var(--text-tytle-color);
+}
+.news__text{
+    margin-top: 20px;
     font-size: 19px;
+    text-align: justify;
+    font-family: "PT Sans", sans-serif;;
+    color: var(--text-color);
+}
+.news__button{
+    font-size: 15px;
     font-weight: 400;
     cursor: pointer;
+    font-family: var(--font-family-tytle);
     color: var(--text-tytle-color);
 }
 a:hover{
