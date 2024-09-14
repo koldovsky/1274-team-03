@@ -1,14 +1,36 @@
 .news {
-    background-color: rgb(255, 255, 255); 
+    padding: 90px 20px 90px 20px;
 }
 .news__title{
-
+    font-size: 30px;
+    font-weight: bold;
+    font-family: var(--font-family-tytle);
+    text-align: center;
+    color: vat(--text-tytle-color);
 }
 .news_subtitle{
-
+    text-align: center;
+    font-size: 19px;
+    color: var(--text-color);
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 28.5px;
 }
 .news_text{
-
+    text-align: center;
+    font-size: 19px;
+    color: var(--text-color);
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 28.5px;
+}
+.news_image{
+    width="327"
+    height="226"
+}
+.news_icon{
+    width="704"
+    height="32"
 }
 .news_button{
 
