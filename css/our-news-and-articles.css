@@ -10,8 +10,8 @@
     font-family: var(--font-family-tytle);
     color: var(--text-tytle-color);
 }
-.news__icon{
-    width: 100%;
+.news__icon {
+    width: 30%;
     height: 30%;
     display: inline-block;
     margin-top: 25px;
