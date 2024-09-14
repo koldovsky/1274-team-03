@@ -1,0 +1,21 @@
+.promotion__title-text
+{
+    color: #46c1c7;
+}
+.promotion
+{
+    background-image: url("../img/section-promotion/cta.png");
+    background-repeat: no-repeat;
+    max-height: 500px;
+}
+.promotion__subtitle-text
+{
+    font-style: inherit;
+    font-family: "Baloo 2", cursive;
+    font-size: 48px;
+}
+.promotion__body-text
+{
+    font-family: "PT Sans", sans-serif;
+    font-size: 19px;
+}
