@@ -6,39 +6,38 @@
 }
 
 .hero__button {
-    background-color: #ff7f50; /* Основний колір */
-    color: white; /* Колір тексту */
-    padding: 15px 30px; /* Відступи */
-    border: none; /* Відсутність рамки */
-    border-radius: 5px; /* Округлені краї */
-    font-size: 16px; /* Розмір тексту */
-    font-weight: bold; /* Жирність тексту */
-    cursor: pointer; /* Зміна курсору при наведенні */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Плавний перехід для кольору та масштабу */
+    background-color: #ff7f50; 
+    color: white; 
+    padding: 15px 30px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 .hero__button--about {
-    background-color: #ffa07a; /* Колір для кнопки "About Us" */
+    background-color: #ffa07a; 
 }
 
 .hero__button--categories {
-    background-color: #48d1cc; /* Колір для кнопки "Categories" */
+    background-color: #48d1cc; 
 }
 
 .hero__button:hover {
-    background-color: #ff6347; /* Зміна кольору при наведенні */
-    transform: scale(1.05); /* Легка зміна розміру при наведенні */
+    background-color: #ff6347; 
+    transform: scale(1.05); 
 }
 
 .hero__button:active {
-    transform: scale(0.95); /* Зміна розміру при натисканні */
+    transform: scale(0.95); 
 }
 
 .header__working-hours {
     background-color: #f2e8e4;
     color:rgb(237, 100, 53)
 }
-
 
 .header__logo img {
     width: 182px; 
@@ -64,8 +63,6 @@
     margin-bottom: 20px;
     color: #333;
 }
-
-
 
 .header__info {
     display: flex;
