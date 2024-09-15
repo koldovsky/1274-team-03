@@ -25,7 +25,7 @@
   --arrow-svg-collor : white;
   --quantity-button-color: rgb(197, 203, 214);
   --banner-text-color:  #323232;
-  font-family: "PT Sans", sans-serif;
+  --font-family: "PT Sans", sans-serif;
   --font-family-tytle: "Baloo 2", sans-serif;
 
   scroll-behavior: smooth;
