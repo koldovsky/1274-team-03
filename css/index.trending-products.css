@@ -129,7 +129,7 @@
 .trending-products__items {
   padding: 20px 0;
 }
-
+/*
 @media (min-width: 765px) {
   .trending-products__items{
     display: grid;
@@ -141,5 +141,13 @@
 @media (min-width: 991px) {
   .trending-products__items{
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}*/
+
+@media (min-width: 765px) {
+  .product-card__image {
+    max-width: 688px;
+    width: 100%; 
+    height: auto; 
   }
 }
