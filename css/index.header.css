@@ -10,9 +10,11 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.header__working-hours{
-    color: #f2e8e4;
+.header__working-hours {
+    background-color: #f2e8e4;
+   
 }
+
 
 .header__logo img {
     width: 182px; 
