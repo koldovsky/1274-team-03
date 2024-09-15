@@ -32,3 +32,9 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - Volosheniuk Vladyslav
 - Semenchenko Andrii
 - Mykola Rad
+- Pavlo Tukalo
+- Tsurkan Zoriana
+- Antipov Oleksandr
+- Rybitska Ivanna
+- Maksym Lytvynchuk
+- Oleksandr Yieriemieiev

@@ -1,0 +1,228 @@
+.main-content {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.main-content__link {
+  color: var(--text-tytle-color);
+  font-size: 17px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.main-content__link:hover {
+  color: var(--buttom-text-hover-color);
+}
+
+.product-navigation {
+  padding-top: 45px;
+}
+
+.product-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10px;
+  z-index: 2;
+}
+
+.product-navigation__button--prev {
+  position: relative;
+  left: 15px;
+  .product-navigation__arrow-button {
+    transform: rotate(180deg);
+    fill: white;
+  }
+}
+
+.product-navigation__button--next {
+  position: relative;
+  right: 15px;
+  .product-navigation__arrow-button {
+    fill: white;
+  }
+}
+
+.product-navigation__arrow-button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--arrows-fone-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.product-navigation__image {
+  min-width: 204;
+  max-width: 333.75px;
+  margin-bottom: 16px;
+}
+
+.product-preview {
+  display: flex;
+  flex-direction: row;
+  padding: 6px;
+  padding-left: 0px;
+  min-width: 49.33px;
+  max-width: 118.39px;
+  width: 100%;
+}
+.product-preview__card {
+  border-color: var(--border-color);
+  border-width: 1px;
+  border-style: solid;
+  width: clamp(
+    35.33px,
+    calc(35.33px + (108 - 35.33) * ((100vw - 320px) / (760 - 320))),
+    108px
+  );
+}
+
+.product-details {
+  margin-top: 50px;
+}
+
+.product-details__status {
+  color: var(--status-text);
+  font-size: 17px;
+  height: 27.1875px;
+  line-height: 27.2px;
+}
+
+.product-details__name,
+.product-details__id {
+  font-family: var(--font-family-tytle);
+  font-size: 22px;
+  color: var(--text-tytle-color);
+  font-weight: bold;
+  line-height: 28.6px;
+}
+
+.product-details__code {
+  margin-top: 8px;
+  line-height: 19.6px;
+  font-size: 14px;
+}
+
+.product-details__price {
+  margin-top: 16px;
+  font-size: 20px;
+  line-height: 25.9992px;
+  font-weight: bold;
+  margin-bottom: 48px;
+}
+
+.price-section__divider {
+  width: 100%;
+  border-top: 1px solid var(--divider-color);
+  margin-bottom: 24px;
+}
+
+.quantity-selection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.quantity-selection__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.quantity-selection__input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--quantity-button-color);
+  border-radius: 4px;
+  margin-right: 16px;
+  height: 37px;
+  width: 75px;
+}
+
+.quantity-selection__input {
+  width: 49px;
+  height: 30px;
+  border: none;
+  text-align: left;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 17px;
+}
+
+.quantity-selection__arrows {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5px;
+  gap: 7px;
+}
+
+.quantity-selection__arrow {
+  cursor: pointer;
+  fill: var(--quantity-button-color);
+}
+.quantity-selection__arrow--down {
+  transform: rotate(180deg);
+}
+
+.quantity-selection__add-to-cart {
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: var(--button-hover-color);
+  color: var(--buttom-text-hover-color);
+  border: none;
+  border-radius: 4px;
+  height: 37px;
+  width: 123px;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.quantity-selection__add-to-cart:hover {
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+}
+
+.product-description {
+  margin-top: 24px;
+  border: none;
+}
+
+.product-description__toggle {
+  width: 91px;
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.product-description__toggle::after {
+  content: "";
+  display: block;
+  width: 91px;
+  height: 2px;
+  background-color: var(--accent-text-color);
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.description-section__content {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-top: 27.2px;
+}
