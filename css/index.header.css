@@ -3,6 +3,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
+    background-color: #f2e8e4;
+    color:rgb(237, 100, 53)
 }
 
 .hero__button {
@@ -32,11 +34,6 @@
 
 .hero__button:active {
     transform: scale(0.95); 
-}
-
-.header__working-hours {
-    background-color: #f2e8e4;
-    color:rgb(237, 100, 53)
 }
 
 .header__logo img {
