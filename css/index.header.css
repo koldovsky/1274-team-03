@@ -1,4 +1,3 @@
-
 .hero__button {
     background-color: #ff7f50; 
     color: white; 
@@ -9,6 +8,10 @@
     font-weight: bold; 
     cursor: pointer; 
     transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.header__working-hours{
+    color: #f2e8e4;
 }
 
 .header__logo img {
