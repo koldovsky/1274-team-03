@@ -1,4 +1,4 @@
-/* Загальні стилі для кнопок в секції hero */
+
 .hero__button {
     background-color: #ff7f50; 
     color: white; 
@@ -8,8 +8,12 @@
     font-size: 16px; 
     font-weight: bold; 
     cursor: pointer; 
-    text-transform: uppercase; 
     transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.header__logo img {
+    width: 182px; 
+    height: auto; 
 }
 
 .hero__button--about {
@@ -29,16 +33,14 @@
     transform: scale(0.95);
 }
 
-/* Центрування вмісту hero */
 .hero {
-    text-align: center; /* Центрувати текст і кнопки */
+    text-align: center; 
 }
 
 .hero__actions {
-    margin-top: 20px; /* Відступ між текстом і кнопками */
+    margin-top: 20px; 
 }
 
-/* Додаткові стилі для заголовка і тексту */
 .hero__title {
     font-size: 48px;
     font-weight: bold;
