@@ -1,28 +1,127 @@
-<section class="trending-products" id="trending-products">
-  <h2 class="trending-products__title">Trending Products</h2>
-  <div class="trending-products__svg-container">
-    <svg
-      class="trending-products__svg"
-      width="209"
-      height="32"
-      viewBox="0 0 209 90"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M150.618 65.5802C145.146 71.1557 136.266 71.1559 130.794 65.5802C129.342 64.1009 127.257 61.977 124.986 59.6627L83.7367 59.6626C81.4684 61.9737 79.384 64.0974 77.9288 65.5801C72.4564 71.1557 63.5767 71.1557 58.1043 65.5801C52.632 60.0044 52.6318 50.9573 58.1043 45.3815C52.632 39.8059 52.6318 30.7588 58.1043 25.183C63.58 19.604 72.4564 19.6073 77.9288 25.183C79.3807 26.6623 81.4653 28.7862 83.7367 31.1005L124.986 31.1006C127.258 28.7861 129.342 26.6625 130.794 25.1831C136.269 19.6042 145.146 19.6073 150.619 25.1831C156.091 30.7586 156.094 39.8029 150.618 45.3818C156.091 50.9573 156.094 60.0013 150.618 65.5802Z"
-        fill="#FBD6BF"
-      />
-      <circle cx="198" cy="45" r="11" fill="#FBD6BF" />
-      <circle cx="11" cy="45" r="11" fill="#FBD6BF" />
-    </svg>
+<section class="conteiner trending-products" id="trending-products">
+  <div class="trending-products_titile-container">
+    <h2 class="trending-products__title">Trending Products</h2>
+    <div class="trending-products__svg-container">
+      <svg
+        class="trending-products__svg"
+        width="209"
+        height="32"
+        viewBox="0 0 209 90"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M150.618 65.5802C145.146 71.1557 136.266 71.1559 130.794 65.5802C129.342 64.1009 127.257 61.977 124.986 59.6627L83.7367 59.6626C81.4684 61.9737 79.384 64.0974 77.9288 65.5801C72.4564 71.1557 63.5767 71.1557 58.1043 65.5801C52.632 60.0044 52.6318 50.9573 58.1043 45.3815C52.632 39.8059 52.6318 30.7588 58.1043 25.183C63.58 19.604 72.4564 19.6073 77.9288 25.183C79.3807 26.6623 81.4653 28.7862 83.7367 31.1005L124.986 31.1006C127.258 28.7861 129.342 26.6625 130.794 25.1831C136.269 19.6042 145.146 19.6073 150.619 25.1831C156.091 30.7586 156.094 39.8029 150.618 45.3818C156.091 50.9573 156.094 60.0013 150.618 65.5802Z"
+          fill="#FBD6BF"
+        />
+        <circle cx="198" cy="45" r="11" fill="#FBD6BF" />
+        <circle cx="11" cy="45" r="11" fill="#FBD6BF" />
+      </svg>
+    </div>
+    <p class="trending-products__description">
+      Top-selling items and popular picks by our customers. Check them now!
+    </p>
   </div>
-  <p class="trending-products__description">
-    Top-selling items and popular picks by our customers. Check them now!
-  </p>
+
+  <!--  -->
+  <div id="trending-products__carousel" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a class="product-card__link" href="shop.html">
+          <img class="product-card__image" d-block w-100"
+          src="img/section-trending-products/dora-metal-pet-brush.png" alt="DORA
+          Metal Pet Brush" />
+        </a>
+        <p class="product-card__name">
+          <a href="shop.html" class="product-card__link"
+            >DORA Metal Pet Brush</a
+          >
+        </p>
+        <p class="product-card__price">$15,00</p>
+        <button class="button" class="button" class="product-card__add-to-cart">
+          Add To Cart
+        </button>
+      </div>
+      <div class="carousel-item">
+        <a class="product-card__link" href="shop.html">
+          <img class="product-card__image" d-block w-100"
+          src="img/section-trending-products/kittens-heaven-set.png"
+          alt="Kitten's Heaven Set" />
+        </a>
+        <p class="product-card__name">
+          <a href="shop.html" class="product-card__link">Kitten's Heaven Set</a>
+        </p>
+        <p class="product-card__price">$12,00</p>
+        <button class="button" class="product-card__add-to-cart">
+          Add To Cart
+        </button>
+      </div>
+      <div class="carousel-item">
+        <a class="product-card__link" href="shop.html">
+          <img class="product-card__image" d-block w-100"
+          src="img/section-trending-products/opty-pet-carrier.png" alt="OPTY Pet
+          Carrier" />
+        </a>
+        <p class="product-card__name">
+          <a href="shop.html" class="product-card__link">OPTY Pet Carrier</a>
+        </p>
+        <p class="product-card__price">$8,00</p>
+        <button class="button" class="product-card__add-to-cart">
+          Add To Cart
+        </button>
+      </div>
+      <div class="carousel-item">
+        <a class="product-card__link" href="shop.html">
+          <img class="product-card__image" d-block w-100"
+          src="img/section-trending-products/aga-rope-toy.png" alt="AGA Rope
+          Toy" />
+        </a>
+        <p class="product-card__name">
+          <a href="shop.html" class="product-card__link">AGA Rope Toy</a>
+        </p>
+        <p class="product-card__price">$5,00</p>
+        <button class="button" class="product-card__add-to-cart">
+          Add To Cart
+        </button>
+      </div>
+      <div class="carousel-item">
+        <a class="product-card__link" href="shop.html">
+          <img class="product-card__image" d-block w-100"
+          src="img/section-trending-products/dora-pet-carrier.png" alt="DORA Pet
+          Carrier" />
+        </a>
+        <p class="product-card__name">
+          <a href="shop.html" class="product-card__link">DORA Pet Carrier</a>
+        </p>
+        <p class="product-card__price">$23,00</p>
+        <button class="button" class="product-card__add-to-cart">
+          Add To Cart
+        </button>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#trending-products__carousel"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#trending-products__carousel"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--  
   <div class="trending-products__list">
     <div class="trending-products__button trending-products__button--prev">
-      <button  class="trending-products__arrow-button">
+      <button class="trending-products__arrow-button">
         <svg
           width="20"
           class="trending-products__arrow-svg"
@@ -42,7 +141,6 @@
         </svg>
       </button>
     </div>
-
     <div class="trending-products__items">
       <article class="product-card">
         <a class="product-card__link" href="shop.html">
@@ -59,7 +157,9 @@
           >
         </p>
         <p class="product-card__price">$15,00</p>
-        <button class = "button" class = "button" class="product-card__add-to-cart">Add To Cart</button>
+        <button class="button" class="button" class="product-card__add-to-cart">
+          Add To Cart
+        </button>
       </article>
 
       <article class="product-card">
@@ -75,7 +175,9 @@
           <a href="shop.html" class="product-card__link">Kitten's Heaven Set</a>
         </p>
         <p class="product-card__price">$12,00</p>
-        <button  class = "button" class="product-card__add-to-cart">Add To Cart</button>
+        <button class="button" class="product-card__add-to-cart">
+          Add To Cart
+        </button>
       </article>
 
       <article class="product-card">
@@ -91,7 +193,9 @@
           <a href="shop.html" class="product-card__link">OPTY Pet Carrier</a>
         </p>
         <p class="product-card__price">$8,00</p>
-        <button  class = "button"class="product-card__add-to-cart">Add To Cart</button>
+        <button class="button" class="product-card__add-to-cart">
+          Add To Cart
+        </button>
       </article>
 
       <article class="product-card">
@@ -107,7 +211,9 @@
           <a href="shop.html" class="product-card__link">AGA Rope Toy</a>
         </p>
         <p class="product-card__price">$5,00</p>
-        <button class = "button" class="product-card__add-to-cart">Add To Cart</button>
+        <button class="button" class="product-card__add-to-cart">
+          Add To Cart
+        </button>
       </article>
 
       <article class="product-card">
@@ -123,7 +229,9 @@
           <a href="shop.html" class="product-card__link">DORA Pet Carrier</a>
         </p>
         <p class="product-card__price">$23,00</p>
-        <button  class = "button" class="product-card__add-to-cart">Add To Cart</button>
+        <button class="button" class="product-card__add-to-cart">
+          Add To Cart
+        </button>
       </article>
     </div>
 
@@ -148,5 +256,5 @@
         </svg>
       </button>
     </div>
-  </div>
+  </div>-->
 </section>

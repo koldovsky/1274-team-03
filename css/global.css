@@ -10,6 +10,7 @@
 }
 
 :root {
+  margin: auto;
   --text-color: rgb(149, 139, 126);
   --text-tytle-color: rgb(60, 55, 49);
   --button-color: rgb(178, 231, 233);
@@ -21,6 +22,7 @@
   --border-color: rgb(70, 76, 92);
   --status-text: rgb(97, 168, 84);
   --divider-color: rgb(237, 240, 245);
+  --arrow-svg-collor : white;
   --quantity-button-color: rgb(197, 203, 214);
   --banner-text-color:  #323232;
   font-family: "PT Sans", sans-serif;
@@ -33,4 +35,9 @@
 img {
   display: block;
   width: 100%;
+}
+
+.conteiner {
+  max-width: 1200px;
+  margin: auto;
 }
