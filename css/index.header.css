@@ -1,3 +1,10 @@
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
 .hero__button {
     background-color: #ff7f50; /* Основний колір */
     color: white; /* Колір тексту */
@@ -59,12 +66,6 @@
 }
 
 
-.header__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-}
 
 .header__info {
     display: flex;
