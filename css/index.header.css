@@ -1,3 +1,8 @@
+.header{
+    width: 1280;
+    height: 42;
+}
+
 .header__top {
     display: flex;
     justify-content: space-between;
