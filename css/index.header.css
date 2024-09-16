@@ -1,0 +1,85 @@
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #f2e8e4;
+    color:rgb(237, 100, 53)
+}
+
+.hero__button {
+    background-color: #ff7f50; 
+    color: white; 
+    padding: 15px 30px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.hero__button--about {
+    background-color: #ffa07a; 
+}
+
+.hero__button--categories {
+    background-color: #48d1cc; 
+}
+
+.hero__button:hover {
+    background-color: #ff6347; 
+    transform: scale(1.05); 
+}
+
+.hero__button:active {
+    transform: scale(0.95); 
+}
+
+.header__logo img {
+    width: 182px; 
+    height: auto; 
+}
+
+.hero {
+    text-align: center; 
+}
+
+.hero__actions {
+    margin-top: 20px; 
+}
+
+.hero__title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero__description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.header__info {
+    display: flex;
+    gap: 20px;
+}
+
+.header__working-hours, .header__email {
+    font-size: 14px;
+    color: #333;
+}
+
+.header__email a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.header__email a:hover {
+    text-decoration: underline;
+}
+
+.header__contact {
+    font-size: 14px;
+}
