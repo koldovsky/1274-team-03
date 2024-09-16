@@ -1,11 +1,8 @@
-.header{
-    z-index: auto;
-}
 .header__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 15px;
+    padding: 5px 70px;
     font-weight: bold;
     background-color: #f2e8e4;
     color: rgb(237, 100, 53);
