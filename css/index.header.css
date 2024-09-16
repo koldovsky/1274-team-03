@@ -1,8 +1,19 @@
-.header{
-    background-image: url('your-image.jpg'); 
+.header {
+    position: relative;
+}
+.header::after {
+    content: '';
+    display: block;
+    background-image: url('img/section-best-quality/header-dog.png'); 
     background-size: cover; 
     background-position: center; 
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
+    height: 400px; 
+    width: 100%; 
+    position: absolute;
+    top: 42px;
+    left: 0;
+    z-index: -1;
 }
 
 .header__top {
