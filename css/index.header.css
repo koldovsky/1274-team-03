@@ -12,8 +12,8 @@
     line-height: 42px;
 }
 
-.header__phone{
-    padding: 0 10px;
+.header__email{
+    padding-right: 10px;
 }
 
 .header__top a {
