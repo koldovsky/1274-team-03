@@ -1,0 +1,20 @@
+.testimonials-by-our-client__title {
+  max-width: 300px;
+  margin: auto;
+  font-size: 30px;
+  font-family: var(--font-family-tytle);
+  color: var(--text-tytle-color);
+  font-weight: 700;
+  text-align: center;
+}
+
+.testimonials-by-our-client__description{
+  max-width: 510px;
+  margin: auto;
+  font-family: "PT Sans", sans-serif;
+  color: var(--text-color);
+  font-size: 19px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
