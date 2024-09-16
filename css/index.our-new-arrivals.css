@@ -1,33 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --text-color: rgb(149, 139, 126);
-  --text-tytle-color: #3c3731;
-  --button-color: rgb(178, 231, 233);
-  --button-hover-color:#ffe6d4;
-  --accent-text-color: rgb(237, 100, 53);
-  --button-text-color: rgb(69, 193, 199);
-  --buttom-text-hover-color:#ed6435;
-  --arrows-fone-color: #59534e;
-  font-family: "PT Sans", sans-serif;
-  --font-family-tytle: "Baloo 2", sans-serif;
-  scroll-behavior: smooth;
-}
-
-img {
-  display: block;
-  width: 100%;
-}
-
 .new-arrivals__title{
     max-width: 300px;
     margin: auto;
@@ -46,6 +16,7 @@ img {
     font-size: 19px;
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 16px;
 }
 
 .new-arrivals__icon{
@@ -132,19 +103,24 @@ img {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-@media (min-width: 765px) {
-    .new-arrivals__carousel-arrivals-inner{
-      display: grid;
-      column-gap: 30px;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-  }
-  
-  @media (min-width: 991px) {
-    .new-arrivals__carousel-arrivals-inner{
-      display: grid;
-      column-gap: 30px;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-  }
-  
+.carousel-control-next,
+.carousel-control-prev {
+  top: 30%; 
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--arrows-fone-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  width: 50%;
+  height: 50%;
+}

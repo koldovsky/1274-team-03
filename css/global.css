@@ -19,12 +19,17 @@
   --accent-text-color: rgb(237, 100, 53);
   --button-text-color: rgb(69, 193, 199);
   --buttom-text-hover-color: #ed6435;
+  --button-hover-color: #ffe6d4;
   --arrows-fone-color: #59534e;
   --border-color: rgb(70, 76, 92);
   --status-text: rgb(97, 168, 84);
   --divider-color: rgb(237, 240, 245);
   --arrow-svg-collor : white;
   --quantity-button-color: rgb(197, 203, 214);
+  --category-button-color: #8a8783;
+  --active-category-button-color: #3c3731;
+  --category-button-border-color:#e7e6e5;
+  --link-color: #9b9295;
   --banner-text-color:  #323232;
   --font-family: "PT Sans", sans-serif;
   --font-family-tytle: "Baloo 2", sans-serif;
