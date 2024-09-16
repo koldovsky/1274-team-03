@@ -11,6 +11,7 @@
 
 :root {
   margin: auto;
+  --accent-color: #faf4f2;
   --text-color: rgb(149, 139, 126);
   --text-tytle-color: rgb(60, 55, 49);
   --button-color: rgb(178, 231, 233);
@@ -37,7 +38,7 @@ img {
   width: 100%;
 }
 
-.conteiner {
+.container {
   max-width: 1200px;
   margin: auto;
 }
