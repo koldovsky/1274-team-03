@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-}
-
 .pets-product-discount {
   background-color: #faf4f2; 
   padding: 40px 0;
@@ -36,32 +32,36 @@ body {
 
 .pets-product-discount__overlay {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 20px;
   border-radius: 10px;
   width: 80%;
-  font-family: "Baloo 2";
-  font-size: 35px;
   color: #3C3731;
   margin: 0;
   padding: 0;
   line-height: 1.2;
 }
+.pets-product-discount__first-title{
+  font-family: "Baloo 2";
+  font-size: 50px;
+  font-weight: bold;
+}
 .discover__link{
   position: absolute;
-  top: 130px;
-  left: 150px;
+  top: 145px;
+  left: 165px;
   text-decoration: none;
+  font-weight: bold;
 
 }
 .pets-product-discount__overlay .discover__link-text{
   font-size: 20px;
   text-decoration: none;
   color: #232323;
-  font-weight: 600;
+  font-weight: bold;
 }
 .discover__link:hover{
   color: #ed6435;
@@ -71,7 +71,10 @@ body {
 .pets-product-discount__overlay .discover__link-arrow{
   font-size: 20px;
   color: #45C1C7;
-  line-height: 10px;
+  font-weight: 700;
+  line-height: 15px;
+  cursor: pointer;
+  
 }
 .discover__link-arrow:hover{
   text-decoration: underline;
@@ -94,6 +97,7 @@ body {
   font-size: 40px;
   color: #3C3731;
   font-family: "Baloo 2";
+  font-weight: bold;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -115,6 +119,7 @@ body {
 em {
   font-size: 18px;
   margin-top: 50px;
+  color: #958B7E;
 }
 
 .pets-product-discount__highlight {

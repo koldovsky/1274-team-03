@@ -22,11 +22,27 @@
     max-width: 600px;
 }
 
-.banner__title__best-quality,
-.banner__title__cat-dog-stuff {
-    margin-top: 30px;
-    font-size: 1.5rem;
+.banner__title__best-quality {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 50px;
     margin-bottom: 10px;
+    font-family: "Baloo 2";
+    font-weight: bold;  
+    color: #3C3731;
+}
+.banner__title__cat-dog-stuff{
+    margin-top: 70px;
+    margin-left: 25px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-family: "Baloo 2";
+    font-weight: bold;  
+    color: #3C3731;
+}
+.banner__title__procent-style{
+    color: #ED6435;
+    font-family: "Baloo 2";
 }
 
 .banner__image-quality,
@@ -40,9 +56,11 @@
 .banner__brands__best-quality {
     color: var(--buttom-text-hover-color);
     margin-top: 30px;
+    margin-left: 15px;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 14px;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .banner__text-overlay-quality,
@@ -57,13 +75,14 @@
     background-color: var(--button-hover-color);
     display: inline-block;
     color: var(--buttom-text-hover-color);
-    padding: 15px 30px;
-    margin-top: 20px;
+    padding: 15px 35px;
+    margin-top: 30px;
+    margin-left: 15px;
     margin-bottom: 50px;
     text-decoration: none;
     text-align: center;
-    border-radius: 10px;
-    font-size: 16px;
+    border-radius: 50px;
+    font-size: 16.5px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
