@@ -6,6 +6,7 @@
     font-weight: bold;
     background-color: #f2e8e4;
     color: rgb(237, 100, 53);
+    font-size: 15px;
 }
 
 .hero__button {
@@ -65,22 +66,4 @@
 .header__info {
     display: flex;
     gap: 20px;
-}
-
-.header__working-hours, .header__email {
-    font-size: 14px;
-    color: #333;
-}
-
-.header__email a {
-    color: #007acc;
-    text-decoration: none;
-}
-
-.header__email a:hover {
-    text-decoration: underline;
-}
-
-.header__contact {
-    font-size: 14px;
 }
