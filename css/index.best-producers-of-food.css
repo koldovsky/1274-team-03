@@ -1,31 +1,117 @@
-.best-producers__label {
-    color: var(--accent-text-color);
+.best-producers {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 25px;
+}
+
+
+.best-producers__video-imitator {
+    background-image: url(../img/section-top-recommendations/playing-cat.png);
+    min-height: 162px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-right: 15px
 }
 
 .best-producers__content {
     font-family: var(--font-family);
 }
 
-.best-producers__title {
-    font-family: var(--font-family-title);
+.best-producers__play-icon-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best-producers__play-icon {
+    width: 50%;
+    height: auto;
+}
+
+.best-producers__content {
+    background-image: url(../img/section-top-recommendations/best-producers-of-food.png);
+    background-size: cover;
+    margin-top: 50px;
+}
+
+.best-producers__label {
     color: var(--text-tytle-color);
     font-weight: bold;
+    color: var(--accent-text-color);
+    margin-bottom: 16px;
+}
+
+.best-producers__title {
+    font-family: var(--font-family-tytle);
+    color: var(--text-tytle-color);
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 28px;
+}
+
+.best-producers__content-inner {
+    padding: 31px 27px;
 }
 
 .best-producers__link {
-    color: var(---link-color);
+    color: var(--link-color);
+    margin-top: 25px;
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.best-producers__link:hover {
+
+    .best-producers__link-text {
+        border-bottom: 2px solid black;
+    }
+
+    .best-producers__link-arrow {
+        border-bottom: 2px solid var(--accent-text-color);
+    }
 }
 
 .best-producers__link-arrow {
     color: var(--button-text-color);
 }
 
-.best-producers__play-icon {
-    width: 26px;
+.best-producers__link-arrow:hover {
+    border-bottom: 2px solid var(--button-text-color);
+}
+
+.best-producers__brands-list {
+    margin-top: 20px;
 }
 
 .best-producers__brand-item {
     color: var(--text-tytle-color);
-    font-family: var(--font-family-title);
+    font-family: var(--font-family);
     font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .best-producers {
+        flex-direction: row;
+    }
+
+    .best-producers__video-imitator {
+        min-width: 459px;
+        /* max-height: 498px;  */
+    }
+
+    .best-producers__content {
+        /* min-height: 498px; */
+        margin-top: 0;
+    }
 }
