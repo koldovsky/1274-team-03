@@ -1,0 +1,106 @@
+.top-recommendations {
+    padding: 90px 25px 60px;
+}
+
+.top-recommendations__title {
+    color: var(--text-tytle-color);
+    text-align: center;
+    font-family: var(--font-family-tytle);
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 30px;
+}
+
+.top-recommendations__icon {
+    margin-top: 25px;
+    height: 32px;
+}
+
+.top-recommendations__description {
+    text-align: center;
+    font-size: 19px;
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin-top: 20px;
+}
+
+.top-recommendations__content {
+    font-family: var(--font-family);
+    margin-top: 40px;
+}
+.top-recommendations__categories {
+    margin-left: -15px;
+    margin-bottom: 30px;
+}
+.top-recommendations__btn-container {
+    margin-left: -15px;
+    display: flex;         
+  overflow-x: auto;        
+  white-space: nowrap;  
+}
+
+.top-recommendations__category-btn {
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    position: relative;
+    background-color: white;
+    border-bottom: 1px solid var(--category-button-border-color);
+    padding: 15px 20px;
+    color: var(--link-color);
+    cursor: pointer;
+}
+
+.active-btn {
+    color: var(--active-category-button-color);
+    font-weight: bold;
+    border-bottom: 2px solid var(--accent-text-color);
+    cursor: pointer;
+}
+
+.top-recommendations__add-to-cart-btn {
+    font-weight: bold;
+    color: var(--button-text-color);
+    background-color: var(--button-color);
+    margin-top: 24px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 15px 32px;
+    border: 1px solid var(--button-color);
+}
+
+.top-recommendations__add-to-cart-btn:hover {
+    color: var(--buttom-text-hover-color);
+    border-color: var(--button-hover-color);
+    background-color: var(--button-hover-color);    
+}
+
+.top-recommendations__add-to-cart-btn:active {
+    color: var(--buttom-text-hover-color);    
+}
+
+.top-recommendations__product-img-link {
+    cursor: pointer;
+}
+
+.top-recommendations__product-txt-link {
+    cursor: pointer;
+    display: block;
+    color: var(--text-color);
+    font-size: 18px;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.top-recommendations__product-txt-link:hover {
+    text-decoration: underline;
+}
+
+.top-recommendations__product-price {
+    display: block;
+    font-weight: bold;
+    color: var(--accent-text-color);
+    font-size: 20px;
+    margin-top: 16px;
+}

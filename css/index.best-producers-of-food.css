@@ -1,0 +1,31 @@
+.best-producers__label {
+    color: var(--accent-text-color);
+}
+
+.best-producers__content {
+    font-family: var(--font-family);
+}
+
+.best-producers__title {
+    font-family: var(--font-family-title);
+    color: var(--text-tytle-color);
+    font-weight: bold;
+}
+
+.best-producers__link {
+    color: var(---link-color);
+}
+
+.best-producers__link-arrow {
+    color: var(--button-text-color);
+}
+
+.best-producers__play-icon {
+    width: 26px;
+}
+
+.best-producers__brand-item {
+    color: var(--text-tytle-color);
+    font-family: var(--font-family-title);
+    font-weight: bold;
+}
