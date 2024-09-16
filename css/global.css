@@ -11,6 +11,7 @@
 
 :root {
   margin: auto;
+  --accent-color: #faf4f2;
   --text-color: rgb(149, 139, 126);
   --text-tytle-color: rgb(60, 55, 49);
   --button-color: rgb(178, 231, 233);
@@ -25,7 +26,7 @@
   --arrow-svg-collor : white;
   --quantity-button-color: rgb(197, 203, 214);
   --banner-text-color:  #323232;
-  font-family: "PT Sans", sans-serif;
+  --font-family: "PT Sans", sans-serif;
   --font-family-tytle: "Baloo 2", sans-serif;
 
   scroll-behavior: smooth;
@@ -37,7 +38,7 @@ img {
   width: 100%;
 }
 
-.conteiner {
+.container {
   max-width: 1200px;
   margin: auto;
 }

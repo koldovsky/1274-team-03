@@ -1,55 +1,80 @@
-.hero__button {
-    background-color: #ff7f50; 
-    color: white; 
-    padding: 15px 30px; 
-    border: none; 
-    border-radius: 5px; 
-    font-size: 16px; 
-    font-weight: bold; 
-    cursor: pointer; 
-    text-transform: uppercase; 
-    transition: background-color 0.3s ease, transform 0.3s ease; 
+.pets-info {
+    padding: 50px 0;
+    background-color: var(--accent-color);
+    font-family: var(--font-family-tytle);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.pets-info__container {
+    display: grid;
+    grid-gap: 10px;
 }
 
-/* Стилі для кнопки "About Us" */
-.hero__button--about {
-    background-color: #ffa07a; /* Фоновий колір кнопки для "About Us" */
+.pets-info__bone {
+    display: block;
+    height: 32px;
 }
 
-/* Стилі для кнопки "Categories" */
-.hero__button--categories {
-    background-color: #48d1cc; /* Фоновий колір кнопки для "Categories" */
-}
-
-/* Ефекти при наведенні на будь-яку з кнопок */
-.hero__button:hover {
-    background-color: #ff6347; /* Зміна кольору при наведенні */
-    transform: scale(1.05); /* Легке збільшення при наведенні */
-}
-
-/* Ефект при натисканні */
-.hero__button:active {
-    transform: scale(0.95); /* Легке зменшення при натисканні */
-}
-
-/* Центрування вмісту hero */
-.hero {
-    text-align: center; /* Центрувати текст і кнопки */
-}
-
-.hero__actions {
-    margin-top: 20px; /* Відступ між текстом і кнопками */
-}
-
-/* Додаткові стилі для заголовка і тексту */
-.hero__title {
-    font-size: 48px;
+.pets-info__content h2 {
+    font-size: 44px;
     font-weight: bold;
-    margin-bottom: 10px;
+    color: var(--text-tytle-color);
 }
 
-.hero__description {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: #333;
+.pets-info__content{
+    font-family: var(--font-family);
+    font-size: 17px;
+    color: var(--text-color);
 }
+
+@media (min-width: 768px) {
+    .pets-info__container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 480px) {
+    .pets-info__benefits{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .pets-info__benefits{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.pets-info__benefits{
+    display: grid;
+    gap: 15px;
+}
+
+.pets-info__benefit-item {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .pets-info__benefit-icon {
+    grid-row: span 2 / span 2;
+  }
+  
+  .pets-info__benefit-text {
+    font-size: 23px;
+    font-weight: bold;
+    color: var(--text-tytle-color);
+  }
+  
+  .pets-info__benefit-description {
+    font-size: 14px;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
