@@ -9,6 +9,14 @@
     font-size: 15px;
 }
 
+.header__top a {
+    text-decoration: none;
+}
+
+.header__top a:hover {
+    text-decoration: underline;
+}
+
 .hero__button {
     background-color: #ff7f50; 
     color: white; 
