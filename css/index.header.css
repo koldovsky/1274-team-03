@@ -12,6 +12,10 @@
     line-height: 42px;
 }
 
+.header__phone{
+    padding: 0 10px;
+}
+
 .header__top a {
     color: rgb(237, 100, 53);
     text-decoration: none;
