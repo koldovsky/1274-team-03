@@ -55,7 +55,7 @@
 .discover__link{
   position: absolute;
   top: 145px;
-  left: 165px;
+  left: 150px;
   text-decoration: none;
   font-weight: bold;
 
@@ -138,7 +138,7 @@ em {
   position: absolute;
   top: 130px;
   display: inline-block;
-  padding: 13px 23px;
+  padding: 10px 25px;
   background-color: none;
   color: var(--brand-button-color);
   text-decoration: none;
@@ -153,6 +153,53 @@ em {
   background-color: var(--brand-button-color);
 }
 
+.brands-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px 0;
+}
+
+.brands-carousel__prev,
+.brands-carousel__next {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.brands-carousel__track-wrapper {
+  overflow: hidden;
+  width: 80%; 
+  display: flex;
+  justify-content: center;
+}
+
+.brands-carousel__track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.brands-carousel__item {
+  min-width: 150px; 
+  height: 80px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  background-color: var(--carousel-background-color); 
+  border-radius: 0px; 
+}
+.brands-carosel-q{
+  width: 41px;
+}
+
+.brands-carousel__item img {
+  width: 100px;
+  height: auto; 
+}
 @media (max-width: 768px) {
   .pets-product-discount__container {
     flex-direction: column;
@@ -163,5 +210,8 @@ em {
     width: 100%;
     margin-bottom: 20px;
   }
+  .brands-carousel__item {
+    min-width: 120px;
+}
 }
 
