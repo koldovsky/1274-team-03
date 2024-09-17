@@ -18,10 +18,13 @@
   background-position: center;
   background-repeat: no-repeat;
   height: calc(100% + 180px);
-  width: 100%;
+  overflow: visible;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
   position: absolute;
   top: -90px;
-  left: 0;
+
   z-index: -1;
 }
 
