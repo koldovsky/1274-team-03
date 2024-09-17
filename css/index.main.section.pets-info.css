@@ -60,9 +60,11 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
   }
+
   
   .pets-info__benefit-icon {
-    grid-row: span 2 / span 2;
+    position: block;
+    grid-row: span 2 / span 2;    
   }
   
   .pets-info__benefit-text {

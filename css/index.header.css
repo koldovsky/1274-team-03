@@ -4,7 +4,7 @@
 .header::after {
     content: '';
     display: block;
-    background-image: url('img/section-best-quality/header-dog.png'); 
+    background-image: url('../img/section-best-quality/header-dog.png'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
