@@ -72,19 +72,19 @@
 .carousel-control-next:hover {
   background-color: var(--button-text-color) !important;
   border: 2px solid var(--button-text-color) !important;
-  transition: background-color 0.3s !important;
+  transition: background-color 1s !important;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   fill: currentColor !important;
-  transition: fill 0.3s !important;
+  transition: fill 1s !important;
 }
 
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
   fill: var(--buttom-text-hover-color) !important;
-  transition: fill 0.3s !important;
+  transition: fill 1s !important;
 }
 
 .product-card__link {
