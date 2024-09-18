@@ -1,6 +1,6 @@
 @import "global.css";
 @import "control.css";
-@import "our-news-and-articles.css";
+@import "index.main.section.our-news-and-articles.css";
 @import "index.trending-products.css";
 @import "index.our-new-arrivals.css";
 @import "index.promotion.css";
@@ -14,4 +14,3 @@
 @import "index.dry-food-treats.css";
 @import "index.testimonials-by-our-client.css";
 @import "index.frequently-asked-questions.css";
-
