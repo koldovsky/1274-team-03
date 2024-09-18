@@ -14,6 +14,7 @@
     font-size: 36px;
     font-weight: 700;
     color: #333;
+    font-family: var(--font-family-tytle);
 }
 
 .dry-food-section__icon img {
@@ -34,6 +35,7 @@
     margin-bottom: 10px;
     color: #333;
     position: relative;
+    font-family: var(--font-family-tytle);
 }
 
 .dry-food-section__category-title::after {
@@ -73,6 +75,7 @@
 .dry-food-section__product-title {
     font-size: 16px;
     font-weight: bold;
+    font-family: var(--font-family-tytle);
 }
 
 .dry-food-section__price-line {
