@@ -57,9 +57,10 @@
 }
 
 .dry-food-section__product-image {
-    width: 100px; /* Adjust as needed */
-    height: auto;
-    margin-right: 10px;
+    width: 120px; 
+    height: 120px;
+    object-fit: cover;
+    margin-right: 20px;
 }
 
 .dry-food-section__product-content {
