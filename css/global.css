@@ -13,7 +13,7 @@
   margin: auto;
   --accent-color: #faf4f2;
   --text-color: rgb(149, 139, 126);
-  --text-tytle-color: rgb(60, 55, 49);
+  --text-tytle-color: #3c3731;
   --button-color: rgb(178, 231, 233);
   --button-hover-color: #ffe6d4;
   --accent-text-color: rgb(237, 100, 53);
@@ -30,8 +30,16 @@
   --active-category-button-color: #3c3731;
   --category-button-border-color: #e7e6e5;
   --link-color: #9b9295;
-  --banner-text-color: #323232;
+  --banner-text-color:  #323232;
+  --background-color: #faf4f2;
+  --brand-color: #ed6435;
+  --subtitle-card-color: #829199;
+  --subtitle-card-second-color: #958B7E;
+  --brand-button-color: #e76b45;
   --font-family: "PT Sans", sans-serif;
+  --arrow-link-color: #45C1C7;
+  --link-title-color: #232323;
+  --carousel-background-color: #ffe6d4;
   --font-family-tytle: "Baloo 2", sans-serif;
 
   scroll-behavior: smooth;
