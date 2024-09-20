@@ -1,10 +1,46 @@
+.header {
+    position: relative;
+}
+.header::after {
+    content: '';
+    display: block;
+    background-image: url('../img/section-best-quality/header-dog.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 400px; 
+    width: 100%; 
+    position: absolute;
+    top: 42px;
+    left: 0;
+    z-index: -1;
+}
+
 .header__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 5px 70px;
+    font-weight: bold;
     background-color: #f2e8e4;
-    color:rgb(237, 100, 53)
+    color: rgb(237, 100, 53);
+    font-size: 15px;
+    font-family: "PT Sans", sans-serif;
+    height: 42px; 
+    line-height: 42px;
+}
+
+.header__email{
+    padding-right: 10px;
+}
+
+.header__top a {
+    color: rgb(237, 100, 53);
+    text-decoration: none;
+}
+
+.header__top a:hover {
+    text-decoration: underline;
 }
 
 .hero__button {
@@ -64,22 +100,4 @@
 .header__info {
     display: flex;
     gap: 20px;
-}
-
-.header__working-hours, .header__email {
-    font-size: 14px;
-    color: #333;
-}
-
-.header__email a {
-    color: #007acc;
-    text-decoration: none;
-}
-
-.header__email a:hover {
-    text-decoration: underline;
-}
-
-.header__contact {
-    font-size: 14px;
 }
