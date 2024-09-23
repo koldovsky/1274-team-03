@@ -1,0 +1,96 @@
+.promotion
+{
+    padding-bottom: 100px;
+    padding-top: 90px;
+    min-width: 320px;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    line-height: 27.2px;
+    background-image: url("../img/section-promotion/cta.png");
+    background-repeat: no-repeat;
+    position: relative;
+    font-size: 17px;
+}
+.promotion__content
+{
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.promotion__info
+{
+    display: flex;
+    font-weight: 400;
+    justify-content: center;
+    line-height: 27.2px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    flex-direction: column;
+    flex-basis: 100%;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    text-align: left;
+    width: 327px;
+}
+.promotion__title-text
+{
+    color: #46c1c7;
+    text-align: center;
+    font-size: 15px;
+    font-family: "PT Sans", sans-serif;
+    border-image-width: 1;
+}
+.promotion__subtitle-text
+{
+    font-weight: 700;
+    font-family: "Baloo 2", cursive;
+    font-size: 48px;
+}
+.promotion__body-text
+{
+    font-family: "PT Sans", sans-serif;
+    font-size: 19px;
+}
+.promotion__btn
+{
+    background-color: rgb(178, 231, 233);
+    color: rgb(69, 193, 199);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-width: 1px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 16.5px;
+    font-weight: 700;
+    height: 48.5px;
+    letter-spacing: 0.825px;
+    line-height: 16.5px;
+    position: absolute;
+    text-align: center;
+    transition-duration: 0.2s, 0.2s, 0.2s, 0.2s;
+    width: 133.734px;
+    word-break: break-word;
+    border-top-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    font-family: "PT Sans", sans-serif;
+    display: block;
+    text-decoration: none;
+    padding-top: 14px;
+}
+.promotion__btn:hover
+{
+    background-color: #ffe6d4;
+    color: #ed6435;
+    text-decoration: none;
+}

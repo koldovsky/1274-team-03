@@ -13,7 +13,7 @@
 }
 
 .main-content__link:hover {
-  color: var(--buttom-text-hover-color);
+  color: var(--accent-text-color);
 }
 
 .product-navigation {
@@ -33,7 +33,7 @@
   left: 15px;
   .product-navigation__arrow-button {
     transform: rotate(180deg);
-    fill: white;
+    fill: var(--arrows-fone-color);
   }
 }
 
@@ -41,7 +41,7 @@
   position: relative;
   right: 15px;
   .product-navigation__arrow-button {
-    fill: white;
+    fill: var(--arrows-fone-color);
   }
 }
 
@@ -174,27 +174,6 @@
   transform: rotate(180deg);
 }
 
-.quantity-selection__add-to-cart {
-  cursor: pointer;
-  padding: 8px 16px;
-  font-size: 16px;
-  background-color: var(--button-hover-color);
-  color: var(--buttom-text-hover-color);
-  border: none;
-  border-radius: 4px;
-  height: 37px;
-  width: 123px;
-  border-radius: 25px;
-  font-size: 15px;
-  cursor: pointer;
-  text-align: center;
-}
-
-.quantity-selection__add-to-cart:hover {
-  background-color: var(--button-color);
-  color: var(--button-text-color);
-}
-
 .product-description {
   margin-top: 24px;
   border: none;
@@ -225,4 +204,50 @@
   font-size: 17px;
   line-height: 1.6;
   margin-top: 27.2px;
+}
+
+.button-prev,
+.button-next {
+  display: flex;
+  border-radius: 50%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 2px solid var(--accent-text-color);
+  background-color: var(--accent-text-color);
+  width: 50px;
+  height: 50px;
+  color: var(--category-button-border-color);
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.button-prev:hover,
+.button-next:hover {
+  background-color: var(--button-text-color);
+  border: 2px solid var(--button-text-color);
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.button-prev svg,
+.button-next svg {
+  fill: currentColor;
+  -webkit-transition: fill 0.3s;
+  -o-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+
+.button-prev:hover svg,
+.button-next:hover svg {
+  fill: var(--accent-text-color);
+  -webkit-transition: fill 0.3s;
+  -o-transition: fill 0.3s;
+  transition: fill 0.3s;
 }

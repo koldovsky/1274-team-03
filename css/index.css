@@ -1,10 +1,9 @@
 @import "global.css";
 @import "control.css";
-@import "our-news-and-articles.css";
+@import "index.main.section.our-news-and-articles.css";
 @import "index.trending-products.css";
 @import "index.our-new-arrivals.css";
 @import "discount-pets-product-selection.css";
 @import "index.main.section.banner.best-quality.css";
-@import "index.main.section.banner.cat-dog-stuff.css";
 @import "index.main.section.any_products_for_any_pets.css";
 @import "global.footer.css"

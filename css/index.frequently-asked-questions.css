@@ -1,0 +1,57 @@
+.frequently-asked-questions__line-first,
+.frequently-asked-questions__line-second {
+  border-bottom: 1px solid #ed6435;
+}
+.frequently-asked-questions__line-second {
+  margin-bottom: 120px;
+}
+.frequently-asked-questions {
+  width: 100%;
+  margin: 0 auto;
+  font-family: var(--font-family-tytle);
+  color: var(--text-color);
+}
+
+.frequently-asked-questions__partial-name {
+  text-align: center;
+  font-size: 32px;
+  margin: 20px 0;
+  color: var(--accent-text-color);
+}
+
+.frequently-asked-questions__item {
+  border-bottom: 3px solid #ed6435;
+  margin-bottom: 10px;
+  max-width: 800px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.frequently-asked-questions__item-btn {
+  width: 100%;
+  padding: 15px;
+  font-family: var(--font-family-tytle);
+  background-color: white;
+  border: none;
+  border-radius: 2px;
+  text-align: left;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.frequently-asked-questions__item-btn:hover {
+  background-color: var(--button-hover-color);
+}
+
+.frequently-asked-questions__content {
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding: 0 15px;
+  background-color: #f9f9f9;
+}
+
+.frequently-asked-questions__item.active .frequently-asked-questions__content {
+  max-height: 500px;
+  padding: 15px;
+}
