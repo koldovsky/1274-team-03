@@ -23,8 +23,10 @@
   --divider-color: rgb(237, 240, 245);
   --quantity-button-color: rgb(197, 203, 214);
   --banner-text-color:  #323232;
+  --background-color-dark: #faf4f2;
   font-family: "PT Sans", sans-serif;
   --font-family-tytle: "Baloo 2", sans-serif;
+  --text-title-color: rgb(60, 55, 49);
 
   scroll-behavior: smooth;
   color: var(--text-color);
