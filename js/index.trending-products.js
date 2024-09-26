@@ -46,6 +46,8 @@ function updateCarousel() {
 
 // Event listeners
 prevButton.addEventListener('click', () => {
+    console.log('Prev button clicked'); // Проверка нажатия кнопки
+
     if (--currentIndex < 0) {
         currentIndex = slides.length - slidesPerView * 2 - 1;
         carouselInner.style.transition = 'none';
@@ -61,6 +63,8 @@ prevButton.addEventListener('click', () => {
 });
 
 nextButton.addEventListener('click', () => {
+    console.log('некст button clicked'); // Проверка нажатия кнопки
+
     carouselInner.style.transition = ''; // Ensure transition is not 'none'
     if (++currentIndex >= slides.length - slidesPerView) {
         currentIndex = slidesPerView;
