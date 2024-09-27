@@ -1,4 +1,4 @@
-const products = [
+/*const products = [
   {
     id: "1",
     title: "DORA Metal Pet Brush",
@@ -54,3 +54,4 @@ function renderProducts(products) {
 }
 
 renderProducts(products);
+*/

@@ -1,6 +1,6 @@
 function init() {
     import('./index.trending-products.js');
-    import('./index.product-list.js');
+ //   import('./index.product-list.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
