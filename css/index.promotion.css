@@ -1,6 +1,6 @@
 .promotion
 {
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     padding-top: 90px;
     min-width: 320px;
     overflow-wrap: break-word;
@@ -44,11 +44,18 @@
     font-weight: 700;
     font-family: "Baloo 2", cursive;
     font-size: 48px;
+    line-height: 48px;
+    color: rgb(60, 55, 49);
 }
 .promotion__body-text
 {
     font-family: "PT Sans", sans-serif;
     font-size: 19px;
+    color: rgb(149, 139, 126);
+}
+.promotion__button
+{
+    margin-top: 35px;
 }
 .promotion__btn
 {
@@ -93,4 +100,64 @@
     background-color: #ffe6d4;
     color: #ed6435;
     text-decoration: none;
+}
+.promotion__btn:active
+{
+    background-color: #ffe6d4;
+    color: #ed6435;
+    text-decoration: none;
+}
+.promotion_btn:visited
+{
+    background-color: rgb(178, 231, 233);
+    color: rgb(69, 193, 199);
+    text-decoration: none;
+}
+.timer__square
+{
+    text-align: left;
+    border-top-color: rgb(69, 193, 199);
+    border-left-color: rgb(69, 193, 199);
+    border-right-color: rgb(69, 193, 199);
+    border-bottom-color: rgb(69, 193, 199);
+    font-weight: 400;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    display: block;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 69.16px;
+    width: 69.16px;
+    text-anchor: middle;
+}
+.promotion__timer
+{
+    display: inline-flex;
+    margin-top: 45px;
+}
+.timer__separator
+{
+    width: 16.8px;
+}
+.timer__numb
+{
+    font-size: 36px;
+    font-family: "Baloo 2", cursive;
+    color: rgb(60, 55, 49);
+    font-weight: 700;
+}
+.timer__text
+{
+    font-size: 23px;
+    font-weight: 400;
+    font-family: "PT Sans", sans-serif;
+    color: rgb(149, 139, 126);
 }
