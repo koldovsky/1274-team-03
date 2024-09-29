@@ -62,7 +62,7 @@
 }
 
 .best-producers__content-inner {
-    padding: 31px 27px;
+    padding: 31px 12px;
 }
 
 .best-producers__link {
@@ -71,33 +71,42 @@
     display: block;
     text-decoration: none;
     font-size: 17px;
+    display: inline-block;
+}
+
+.best-producers__link-text {
+    font-weight: bold;
 }
 
 .best-producers__link:hover {
-
-    .best-producers__link-text {
-        border-bottom: 2px solid black;
-    }
-
-    .best-producers__link-arrow {
-        border-bottom: 2px solid var(--accent-text-color);
-    }
+    text-decoration: underline;
+    text-decoration-color: var(--accent-text-color);
 }
+.best-producers__link-text:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--active-category-button-color);
+}
+
+.best-producers__link-arrow:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--button-text-color);
+}
+
 
 .best-producers__link-arrow {
     color: var(--button-text-color);
 }
 
-.best-producers__link-arrow:hover {
-    border-bottom: 2px solid var(--button-text-color);
-}
 
 .best-producers__brands-list {
     margin-top: 20px;
 }
 
 .best-producers__brand-item {
-    color: var(--text-tytle-color);
+    span {
+        color: var(--text-tytle-color);
+    }
+    color: var(--brand-color);
     font-family: var(--font-family);
     font-weight: bold;
 }

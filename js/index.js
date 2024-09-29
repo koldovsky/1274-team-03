@@ -1,5 +1,6 @@
 function init() {
-    import('./index.trending-products.js');
+    import('./index.trending-products.js')
+    import('./index.top-recommendations.js');
  //   import('./index.product-list.js');
 }
 

@@ -66,6 +66,10 @@
     cursor: pointer;
 }
 
+.top-recommendations__category-btn:hover {
+    color: var(--active-category-button-color)
+}
+
 .active-btn {
     color: var(--active-category-button-color);
     font-weight: bold;
