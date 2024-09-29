@@ -1,0 +1,130 @@
+.footer {
+    background-color: var(--background-color);
+    padding: 40px 20px; 
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: left; /* Вирівнюємо весь текст ліворуч */
+}
+
+/* Контейнер для футера */
+.footer__container {
+    display: flex;
+    justify-content: space-between; /* Секції футера рівномірно розподілені */
+    flex-wrap: wrap; /* Секції будуть переноситися на новий рядок, якщо не вистачає місця */
+    align-items: flex-start; /* Вирівнюємо секції по верхньому краю */
+}
+.footer__line {
+    width: 50px; /* Ширина лінії */
+    height: 3px; /* Товщина лінії */
+    background-color: #ed6435; /* Колір лінії */
+    margin-bottom: 15px; /* Відступ від заголовка до наступного елемента */
+}
+
+/* Окремі секції футера займають приблизно чверть ширини */
+.footer__info,
+.footer__navigation,
+.footer__customer-service,
+.footer__help-information {
+    flex: 1 1 22%; /* Приблизно 1/4 ширини екрану */
+    margin: 20px;
+    text-align: left; /* Вирівнюємо текст ліворуч для великих екранів */
+}
+
+/* Логотип */
+.footer__logo {
+    width: 193px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Текст */
+.footer__text {
+    text-align: left !important; /* Вирівнюємо текст ліворуч */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+/* Соціальні іконки */
+.footer__social-item {
+    width: 31px;
+    height: 31px;
+    margin: 0 10px; /* Додаємо відступ між іконками */
+    color: #45c1c7;
+    fill: rgb(244, 230, 226);
+}
+
+/* Список соціальних іконок */
+.footer__social-list {
+    display: flex;
+    justify-content: flex-start; /* Вирівнюємо соціальні іконки ліворуч */
+    margin-bottom: 20px;
+    list-style: none; /* Видаляємо точки (булети) перед іконками */
+    padding: 0; /* Відміняємо стандартні відступи списку */
+}
+
+/* Заголовки секцій футера */
+.footer__title {
+    font-weight: bold;
+    color: var(--text-title-color);
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Підкреслення для заголовків */
+.footer__title::after {
+    content: '';
+    display: block;
+    width: 30px; /* Зменшуємо ширину підкреслення */
+    height: 2px;
+    background-color: #ed6435;
+    position: absolute;
+    bottom: 5px; /* Підняти підкреслення трохи вище */
+    left: 0;
+}
+
+/* Посилання в секціях */
+.footer__link {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: block;
+    text-align: left; /* Вирівнюємо лінки ліворуч */
+}
+
+/* Посилання при наведенні */
+.footer__link:hover {
+    color: var(--text-tytle-color);
+}
+
+/* Медіа-запит для мобільної версії */
+@media (max-width: 767px) {
+    .footer__container {
+        flex-direction: column; /* Вирівнюємо секції вертикально на мобільних */
+        align-items: center;
+    }
+
+    .footer__info,
+    .footer__navigation,
+    .footer__customer-service,
+    .footer__help-information {
+        flex: 1 1 100%; /* Кожна секція займає всю ширину на мобільних */
+        margin: 20px 0;
+        text-align: center; /* Вирівнюємо текст по центру на мобільних */
+    }
+
+    .footer__social-list {
+        justify-content: center; /* Центруємо іконки соціальних мереж */
+    }
+
+    .footer__link {
+        text-align: center; /* Центруємо лінки на мобільних */
+    }
+
+    .footer__title::after {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30px; /* Підкреслення менше на мобільних пристроях */
+    }
+}
