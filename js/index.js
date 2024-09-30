@@ -3,6 +3,7 @@ function init() {
     import('./index.top-recommendations.js');
  //   import('./index.product-list.js');
     import('./index.frequently-asked-question.js');
+    import('./index.promotion.js')
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
