@@ -10,6 +10,7 @@
   margin: 0 auto;
   font-family: var(--font-family-tytle);
   color: var(--text-color);
+  padding-bottom: 120px;
 }
 
 .frequently-asked-questions__partial-name {
@@ -45,10 +46,13 @@
 }
 
 .frequently-asked-questions__content {
+  max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
   padding: 0 15px;
   background-color: #f9f9f9;
+  
+  
 }
 
 .frequently-asked-questions__item.active .frequently-asked-questions__content {
