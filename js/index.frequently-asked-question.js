@@ -13,7 +13,7 @@ document.querySelectorAll('.frequently-asked-questions__item-btn').forEach(butto
         content.style.maxHeight = content.scrollHeight + 'px';
       } else {
         content.style.maxHeight = 0;
-      }
+      }  
     });
   });
   
