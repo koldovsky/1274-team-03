@@ -1,6 +1,6 @@
-const countdown = document.querySelector('.promotion__timer');
-const targetDate = new Date('2024-10-7T00:00:00');
- 
+const timer = document.querySelectorAll('.timer__square');
+const targetDate = new Date('2024-10-08T00:00:00');
+
 function updateCountdown() {
   const now = new Date();
   const remainingTime = targetDate - now;
@@ -10,10 +10,10 @@ function updateCountdown() {
   const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
  
-  document.getElementById('days').innerText = days.toString().padStart(2, '0');
-  document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
-  document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
-  document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+  document.getElementById('days').innerHTML = days.toString().padStart(2, '0');
+  document.getElementById('hours').innerHTML = hours.toString().padStart(2, '0');
+  document.getElementById('minutes').innerHTML = minutes.toString().padStart(2, '0');
+  document.getElementById('seconds').innerHTML = seconds.toString().padStart(2, '0');
 }
  
 setInterval(updateCountdown, 1000);
