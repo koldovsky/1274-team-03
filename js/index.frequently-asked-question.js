@@ -8,7 +8,7 @@ document.querySelectorAll('.frequently-asked-questions__item-btn').forEach(butto
           otherItem.classList.remove('active');
           otherItem.querySelector('.frequently-asked-questions__content').style.maxHeight = 0;
         }
-      });
+      }); 
       if (item.classList.contains('active')) {
         content.style.maxHeight = content.scrollHeight + 'px';
       } else {
