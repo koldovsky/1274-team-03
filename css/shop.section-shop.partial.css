@@ -12,21 +12,17 @@
 .main-content__link:hover {
   color: var(--accent-text-color);
 }
+
+.product-page-container {
+  margin-top: 45px;
+}
+
 @media (min-width: 768px) {
   .product-page-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 15px;
-    margin-top: 45px;
   }
-}
-
-.product-container {
-  flex-direction: column;
-}
-
-.product-info {
-  flex-direction: column;
 }
 
 .product-navigation {
@@ -42,9 +38,7 @@
 }
 
 @media (min-width: 768px) {
-  .button-prev {
-    display: none;
-  }
+  .button-prev,
   .button-next {
     display: none;
   }
@@ -116,8 +110,10 @@
   flex-direction: row;
   align-items: center;
 }
-/*коробочка для цифры*/
+
 .quantity-selection__input-group {
+  display: flex;
+  flex-direction: row;
   border: 1px solid var(--quantity-button-color);
   border-radius: 4px;
   margin-right: 16px;
@@ -125,7 +121,6 @@
   width: 75px;
 }
 
-/*цифра*/
 .quantity-selection__input {
   width: 49px;
   height: 30px;
@@ -134,7 +129,12 @@
   padding: 8px 12px;
   font-size: 17px;
 }
- /*дальше код не работает*/
+
+.quantity-selection__input:focus {
+  border: none;
+  outline: none;
+}
+
 .quantity-selection__arrows {
   display: flex;
   flex-direction: column;
@@ -147,6 +147,7 @@
   cursor: pointer;
   fill: var(--quantity-button-color);
 }
+
 .quantity-selection__arrow--down {
   transform: rotate(180deg);
 }
@@ -181,4 +182,11 @@
   font-size: 17px;
   line-height: 1.6;
   margin-top: 27.2px;
+}
+
+.quantity-selection__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
