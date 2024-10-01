@@ -126,8 +126,8 @@
   height: 30px;
   border: none;
   text-align: left;
-  padding: 8px 12px;
-  font-size: 17px;
+  padding:10px 12px 5px 12px;
+  font-size: 80%;
 }
 
 .quantity-selection__input:focus {
