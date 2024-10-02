@@ -53,7 +53,19 @@ const products = [
 
 function renderProducts(products) {
   let productsHtml = "";
-  for (const product of products) {
+
+  // Використовуємо URLSearchParams для пошуку параметра 'product'
+  const params = new URLSearchParams(window.location.search);
+  const slug = params.get("product"); // Отримуємо параметр 'product' (slug)
+
+  // Лог у консоль
+  console.log("Selected product slug:", slug);
+
+  // Шукаємо продукт за slug
+  const product = products.find((item) => item.slug === slug);
+
+  // Перевіряємо чи знайдений продукт
+  if (product) {
     productsHtml += `
     <div class="product-page-container">
       <div class="product-container">
@@ -65,9 +77,7 @@ function renderProducts(products) {
           </div>
           <div class="product-navigation__image">
             <a href="shop.html" class="product-navigation__link">
-              <img class="product-navigation__img" width="361" src="${
-                product.image
-              }" alt="${product.title}" />
+              <img class="product-navigation__img" width="361" src="${product.image}" alt="${product.title}" />
             </a>
           </div>
           <div class="button-next">
@@ -79,9 +89,7 @@ function renderProducts(products) {
         <div class="product-preview">
           <article class="product-preview__card">
             <a href="shop.html" class="product-preview__link">
-              <img class="product-preview__image" width="92" src="${
-                product.image
-              }" alt="${product.title}" />
+              <img class="product-preview__image" width="92" src="${product.image}" alt="${product.title}" />
             </a>
           </article>
         </div>
@@ -126,9 +134,16 @@ function renderProducts(products) {
       </div>
     </div>
     `;
+  } else {
+    productsHtml = "<p>Product not found</p>";
   }
+
   const productsContainer = document.querySelector(".products__list");
-  productsContainer.innerHTML = productsHtml;
+
+  // Перевіряємо, чи є контейнер на сторінці
+  if (productsContainer) {
+    productsContainer.innerHTML = productsHtml;
+  }
 }
 
 renderProducts(products);
