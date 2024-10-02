@@ -7,7 +7,7 @@ const products = [
     price: 15.0,
     description:
       "Keep your pet's coat soft, manageable, and good-looking will be much easier with this brush. It has flexible metal pins to remove excess fur and tangles while not hurting your pet.",
-    slug: "dora-metal-pet-brush", 
+    slug: "dora-metal-pet-brush",
   },
   {
     id: "2",
@@ -17,7 +17,7 @@ const products = [
     price: 12.0,
     description:
       "Have you adopted a kitten? Congratulations! It will love this set of toys for sure. Here is everything to entertain your pet — bright woolen mice, sticks with ropes, and clinking balls.",
-    slug: "kittens-heaven-set", 
+    slug: "kittens-heaven-set",
   },
   {
     id: "3",
@@ -27,7 +27,7 @@ const products = [
     price: 5.0,
     description:
       "Play with your dog with this great and simple toy. It features a tennis ball in the middle with a knotted rope running through it. Great for tug-and-fetch games.",
-    slug: "aga-rope-toy", 
+    slug: "aga-rope-toy",
   },
   {
     id: "4",
@@ -37,7 +37,7 @@ const products = [
     price: 23.0,
     description:
       "Do you need to go somewhere with your pet? This carrier is perfect for this. It allows enough air to pass through thanks to the grate and allows the pet to see what is happening around.",
-    slug: "dora-pet-carrier", 
+    slug: "dora-pet-carrier",
   },
   {
     id: "5",
@@ -47,26 +47,24 @@ const products = [
     price: 23.0,
     description:
       "This plastic carrier is large enough even for adult cats. We cannot relieve pets of the stress of being carried outside, but we can make it more comfortable, right?",
-    slug: "opty-pet-carrier", 
+    slug: "opty-pet-carrier",
   },
 ];
 
-function renderProducts(products) {
-  let productsHtml = "";
-
-  // Використовуємо URLSearchParams для пошуку параметра 'product'
+// Функція для отримання параметра `product` з URL
+function getProductFromURL() {
   const params = new URLSearchParams(window.location.search);
-  const slug = params.get("product"); // Отримуємо параметр 'product' (slug)
+  return params.get("product");
+}
 
-  // Лог у консоль
-  console.log("Selected product slug:", slug);
+// Функція для отримання продукту за параметром `slug`
+function getProductBySlug(slug) {
+  return products.find((product) => product.slug === slug);
+}
 
-  // Шукаємо продукт за slug
-  const product = products.find((item) => item.slug === slug);
-
-  // Перевіряємо чи знайдений продукт
-  if (product) {
-    productsHtml += `
+// Функція для рендерингу вибраного продукту
+function renderProduct(product) {
+  let productHtml = `
     <div class="product-page-container">
       <div class="product-container">
         <div class="product-navigation">
@@ -77,7 +75,9 @@ function renderProducts(products) {
           </div>
           <div class="product-navigation__image">
             <a href="shop.html" class="product-navigation__link">
-              <img class="product-navigation__img" width="361" src="${product.image}" alt="${product.title}" />
+              <img class="product-navigation__img" width="361" src="${
+                product.image
+              }" alt="${product.title}" />
             </a>
           </div>
           <div class="button-next">
@@ -89,7 +89,9 @@ function renderProducts(products) {
         <div class="product-preview">
           <article class="product-preview__card">
             <a href="shop.html" class="product-preview__link">
-              <img class="product-preview__image" width="92" src="${product.image}" alt="${product.title}" />
+              <img class="product-preview__image" width="92" src="${
+                product.image
+              }" alt="${product.title}" />
             </a>
           </article>
         </div>
@@ -133,17 +135,18 @@ function renderProducts(products) {
         </div>
       </div>
     </div>
-    `;
-  } else {
-    productsHtml = "<p>Product not found</p>";
-  }
-
+  `;
   const productsContainer = document.querySelector(".products__list");
-
-  // Перевіряємо, чи є контейнер на сторінці
-  if (productsContainer) {
-    productsContainer.innerHTML = productsHtml;
-  }
+  productsContainer.innerHTML = productHtml;
 }
 
-renderProducts(products);
+// Отримуємо значення product з URL
+const productSlug = getProductFromURL();
+if (productSlug) {
+  const product = getProductBySlug(productSlug);
+  if (product) {
+    renderProduct(product);
+  } else {
+    document.querySelector(".products__list").innerHTML = "<p>Product not found</p>";
+  }
+}
