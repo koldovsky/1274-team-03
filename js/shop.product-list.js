@@ -33,7 +33,7 @@ const products = [
     id: "4",
     title: "DORA Pet Carrier (2321)",
     code: "Product code 24",
-    image: "img/section-trending-products/kittens-heaven-set.png",
+    image: "img/section-trending-products/dora-pet-carrier.png",
     price: 23.0,
     description:
       "Do you need to go somewhere with your pet? This carrier is perfect for this. It allows enough air to pass through thanks to the grate and allows the pet to see what is happening around.",
@@ -43,8 +43,8 @@ const products = [
     id: "5",
     title: "OPTY Pet Carrier (2321)",
     code: "Product code 48",
-    image: "img/section-trending-products/dora-pet-carrier.png",
-    price: 23.0,
+    image: "img/section-trending-products/opty-pet-carrier.png",
+    price: 8.0,
     description:
       "This plastic carrier is large enough even for adult cats. We cannot relieve pets of the stress of being carried outside, but we can make it more comfortable, right?",
     slug: "opty-pet-carrier",
