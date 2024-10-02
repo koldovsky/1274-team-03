@@ -51,18 +51,15 @@ const products = [
   },
 ];
 
-// Функція для отримання параметра `product` з URL
 function getProductFromURL() {
   const params = new URLSearchParams(window.location.search);
   return params.get("product");
 }
 
-// Функція для отримання продукту за параметром `slug`
 function getProductBySlug(slug) {
   return products.find((product) => product.slug === slug);
 }
 
-// Функція для рендерингу вибраного продукту
 function renderProduct(product) {
   let productHtml = `
     <div class="product-page-container">
@@ -140,13 +137,13 @@ function renderProduct(product) {
   productsContainer.innerHTML = productHtml;
 }
 
-// Отримуємо значення product з URL
 const productSlug = getProductFromURL();
 if (productSlug) {
   const product = getProductBySlug(productSlug);
   if (product) {
     renderProduct(product);
   } else {
-    document.querySelector(".products__list").innerHTML = "<p>Product not found</p>";
+    document.querySelector(".products__list").innerHTML =
+      "<p>Product not found</p>";
   }
 }
