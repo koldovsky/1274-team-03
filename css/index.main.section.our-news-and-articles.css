@@ -42,12 +42,12 @@
   position: relative;
   box-sizing: border-box;
   border-radius: 8px;
-  transition: box-shadow 0.3s ease;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   background-color: var(--button-hover-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .news__article:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 .news__image {
   height: auto;
