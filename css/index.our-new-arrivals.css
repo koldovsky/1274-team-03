@@ -128,14 +128,14 @@
 
 @media (min-width: 768px) {
 
-    .new-arrivals__carousel-arrivals-inner {
+    .new-arrivals .new-arrivals__carousel-arrivals .new-arrivals__product {
         flex: 0 0 50%;
     }
 
 }
 
 @media (min-width: 1024px) {
-    .new-arrivals__carousel-arrivals-inner {
+    .new-arrivals .new-arrivals__carousel-arrivals .new-arrivals__product {
         flex: 0 0 33.33%;
     }
 }
