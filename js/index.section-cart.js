@@ -1,18 +1,6 @@
 // Выбираем элементы корзины
 const cartIcon = document.getElementById("cart-icon");
 const cartModal = document.getElementById("cart-modal");
-
-cartIcon.addEventListener("click", () => {
-  // Проверяем состояние модального окна
-  console.log("Cart icon clicked!");
-  
-  if (cartModal.style.display === "block") {
-    cartModal.style.display = "none";
-  } else {
-    cartModal.style.display = "block";
-  }
-});
-
 const cartCount = document.getElementById("cart-count");
 const cartItemsContainer = document.getElementById("cart-items");
 const cartTotal = document.getElementById("cart-total");
@@ -70,21 +58,20 @@ function removeFromCart(index) {
 
 // Делегирование события для кнопок "Add To Cart"
 document.body.addEventListener("click", (e) => {
-    if (e.target && e.target.matches(".product-card__add-to-cart")) {
-      const button = e.target;
-      const productCard = button.closest(".product-card");
-      
-      // Проверьте выбор элемента
-      console.log(productCard);
-  
-      const productName = productCard.querySelector(".product-card__name a").innerText;
-      const productPriceText = productCard.querySelector(".product-card__price").innerText;
-      const productPrice = parseFloat(productPriceText.replace("$", ""));
-  
-      // Вызываем функцию добавления в корзину
-      addToCart(productName, productPrice);
-    }
-  });
+  if (e.target && e.target.matches(".product-card__add-to-cart")) {
+    const button = e.target;
+    const productCard = button.closest(".product-card");
+    const productName = productCard.querySelector(
+      ".product-card__name a"
+    ).innerText;
+    const productPriceText = productCard.querySelector(
+      ".product-card__price"
+    ).innerText;
+    const productPrice = parseFloat(productPriceText.replace("$", ""));
+
+    addToCart(productName, productPrice);
+  }
+});
 
 // Переключение видимости модального окна при клике на иконку корзины
 cartIcon.addEventListener("click", () => {
@@ -97,7 +84,7 @@ cartIcon.addEventListener("click", () => {
 
 // Закрытие модального окна при клике вне его
 window.addEventListener("click", (e) => {
-    if (e.target === cartModal) {
-      cartModal.style.display = "none";
-    }
-  });
+  if (e.target === cartModal) {
+    cartModal.style.display = "none";
+  }
+});
