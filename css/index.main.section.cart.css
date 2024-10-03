@@ -1,0 +1,51 @@
+/* Стили для иконки корзины в верхнем правом углу */
+.cart-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: var(--text-title-color);
+  max-width: 70px;
+  z-index: 100;
+}
+
+#cart-count {
+  background-color: var(--brand-color);
+  color: var(--category-button-border-color);
+  border-radius: 50%;
+  padding: 3px 8px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 12px;
+}
+
+/* Стили для модального окна корзины */
+.cart-modal {
+  position: fixed;
+  right: 20px;
+  top: 60px;
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+}
+
+.cart-modal h2 {
+  margin-top: 0;
+}
+
+.cart-items {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
