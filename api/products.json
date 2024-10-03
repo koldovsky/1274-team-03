@@ -1,0 +1,38 @@
+[
+    {
+      "id": "1",
+      "title": "DORA Metal Pet Brush",
+      "image": "img/section-trending-products/dora-metal-pet-brush.png",
+      "description": "A high-quality metal brush for pets.",
+      "price": 15.00
+    },
+    {
+      "id": "2",
+      "title": "Kitten's Heaven Set",
+      "image": "img/section-trending-products/kittens-heaven-set.png",
+      "description": "A fun set of toys for kittens.",
+      "price": 12.00
+    },
+    {
+      "id": "3",
+      "title": "OPTY Pet Carrier",
+      "image": "img/section-trending-products/opty-pet-carrier.png",
+      "description": "A comfortable pet carrier for small animals.",
+      "price": 8.00
+    },
+    {
+      "id": "4",
+      "title": "AGA Rope Toy",
+      "image": "img/section-trending-products/aga-rope-toy.png",
+      "description": "A durable rope toy for pets.",
+      "price": 5.00
+    },
+    {
+      "id": "5",
+      "title": "DORA Pet Carrier",
+      "image": "img/section-trending-products/dora-pet-carrier.png",
+      "description": "A stylish pet carrier.",
+      "price": 23.00
+    }
+  ]
+  
