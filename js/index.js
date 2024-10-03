@@ -5,6 +5,7 @@ function init() {
     import('./index.frequently-asked-question.js');
     import('./index.promotion.js');
     import('./index.our-news-and-articles.js');
+    import('./index.our-new-arrivals.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
