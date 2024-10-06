@@ -172,7 +172,7 @@ function renderProducts(products) {
                         alt="${product.title}" width="270" /></a>
                 <a href="shop.html" class="top-recommendations__product-txt-link">${product.title}</a>
                 <span class="top-recommendations__product-price">$${product.price.toFixed(2).replace('.', ',')}</span>
-                <button class="top-recommendations__add-to-cart-btn">Add to Cart</button>
+                <button class="button product-card__add-to-cart" data-id="2">Add to Cart</button>
             </article>
         `;
     }
@@ -182,7 +182,6 @@ function renderProducts(products) {
 
 function renderButtons(buttons) {
     for (let i = 0; i < buttons.length; ++i) {
-        console.log(products[i]);
         buttons[i].addEventListener("click", () => renderProducts(products[i]));
         buttons[i].addEventListener("click", () => {
             document.querySelector('.active-btn').classList.remove('active-btn');

@@ -1,38 +1,263 @@
 [
-    {
-      "id": "1",
-      "title": "DORA Metal Pet Brush",
-      "image": "img/section-trending-products/dora-metal-pet-brush.png",
-      "description": "A high-quality metal brush for pets.",
-      "price": 15.00
-    },
-    {
-      "id": "2",
-      "title": "Kitten's Heaven Set",
-      "image": "img/section-trending-products/kittens-heaven-set.png",
-      "description": "A fun set of toys for kittens.",
-      "price": 12.00
-    },
-    {
-      "id": "3",
-      "title": "OPTY Pet Carrier",
-      "image": "img/section-trending-products/opty-pet-carrier.png",
-      "description": "A comfortable pet carrier for small animals.",
-      "price": 8.00
-    },
-    {
-      "id": "4",
-      "title": "AGA Rope Toy",
-      "image": "img/section-trending-products/aga-rope-toy.png",
-      "description": "A durable rope toy for pets.",
-      "price": 5.00
-    },
-    {
-      "id": "5",
-      "title": "DORA Pet Carrier",
-      "image": "img/section-trending-products/dora-pet-carrier.png",
-      "description": "A stylish pet carrier.",
-      "price": 23.00
-    }
-  ]
-  
+  {
+    "id": "1",
+    "title": "DORA Metal Pet Brush",
+    "image": "img/section-trending-products/dora-metal-pet-brush.png",
+    "description": "A high-quality metal brush for pets.",
+    "category": "trending-products",
+    "type": "all",
+    "price": 15.00
+  },
+  {
+    "id": "2",
+    "title": "Kitten's Heaven Set",
+    "image": "img/section-trending-products/kittens-heaven-set.png",
+    "description": "A fun set of toys for kittens.",
+    "category": "trending-products",
+    "type": "cats",
+    "price": 12.00
+  },
+  {
+    "id": "3",
+    "title": "OPTY Pet Carrier",
+    "image": "img/section-trending-products/opty-pet-carrier.png",
+    "description": "A comfortable pet carrier for small animals.",
+    "category": "trending-products",
+    "type": "cats",
+    "price": 8.00
+  },
+  {
+    "id": "4",
+    "title": "AGA Rope Toy",
+    "image": "img/section-trending-products/aga-rope-toy.png",
+    "description": "A durable rope toy for pets.",
+    "category": "trending-products",
+    "type": "all",
+    "price": 5.00
+  },
+  {
+    "id": "5",
+    "title": "DORA Pet Carrier",
+    "image": "img/section-trending-products/dora-pet-carrier.png",
+    "description": "A stylish pet carrier.",
+    "category": "trending-products",
+    "type": "all",
+    "price": 23.00
+  },
+  {
+    "id": "6",
+    "title": "DOGGY Fun Set",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-dogs/doggy-fun-set.png",
+    "description": "This is the perfect set to play with your dog! It includes a safety glove, a strong braided rope, and a toy that is so cool to bite and pull!",
+    "category": "top-recommendations",
+    "type": "dogs",
+    "price": 6.00
+  },
+  {
+    "id": "2",
+    "title": "DUNA Pillow Bed",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-dogs/duna-pillow-bed.png",
+    "price": 10.00,
+    "description": "Комфортна та м'яка подушка для сну та відпочинку вашого собаки.",
+    "category": "top-recommendations",
+    "type": "dogs"
+  },
+  {
+    "id": "3",
+    "title": "AGA Retractable Leash",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-dogs/aga-retractable-leash.png",
+    "price": 33.00,
+    "description": "Зручний повідок з механізмом змотування для комфортних прогулянок з вашим собакою.",
+    "category": "top-recommendations",
+    "type": "dogs"
+  },
+  {
+    "id": "4",
+    "title": "DOGGY 2-Bunch Toy",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-dogs/doggy-2-bunch-toy.png",
+    "price": 5.00,
+    "description": "Іграшка у формі двох кісток для тривалих ігрових сесій вашого собаки.",
+    "category": "top-recommendations",
+    "type": "dogs"
+  },
+  {
+    "id": "1",
+    "title": "AGA Mice Set",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-cats/aga-mice-set.png",
+    "price": 3.00,
+    "description": "Набір м'яких іграшкових мишок для активних котячих розваг.",
+    "category": "top-recommendations",
+    "type": "cats"
+  },
+  {
+    "id": "2",
+    "title": "VITALIFE 2-Bowls Set",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-cats/vitalife-2-bowls-set.png",
+    "price": 9.00,
+    "description": "Набір з двох мисок для зручного годування та напування вашого кота.",
+    "category": "top-recommendations",
+    "type": "cats"
+  },
+  {
+    "id": "3",
+    "title": "AGA Leash & Collar",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-cats/aga-leash-collar.png",
+    "price": 13.00,
+    "description": "Поводок та нашийник, створені спеціально для прогулянок з кішкою.",
+    "category": "top-recommendations",
+    "type": "cats"
+  },
+  {
+    "id": "4",
+    "title": "DUNA Gray Bed",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-cats/duna-gray-bed.png",
+    "price": 25.00,
+    "description": "Зручне ліжко для котів, що забезпечує комфорт і тепло під час відпочинку.",
+    "category": "top-recommendations",
+    "type": "cats"
+  },
+  {
+    "id": "1",
+    "title": "DORA Hanging Mirror",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-parrots/dora-hanging-mirror.png",
+    "price": 14.00,
+    "description": "Дзеркало, яке стимулює інтелектуальні здібності вашого папуги та забезпечує розвагу.",
+    "category": "top-recommendations",
+    "type": "parrots"
+  },
+  {
+    "id": "2",
+    "title": "VETRA Hanging Nest",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-parrots/vetra-hanging-nest.png",
+    "price": 8.00,
+    "description": "Підвісне гніздо для комфорту та безпеки вашого папуги під час відпочинку.",
+    "category": "top-recommendations",
+    "type": "parrots"
+  },
+  {
+    "id": "3",
+    "title": "DORA Wood Swing",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-parrots/dora-wood-swing.png",
+    "price": 7.00,
+    "description": "Дерев'яна гойдалка для папуг, що забезпечує активні ігри та розвиток координації.",
+    "category": "top-recommendations",
+    "type": "parrots"
+  },
+  {
+    "id": "4",
+    "title": "OPTY Wooden Stand",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-parrots/opty-wooden-stand.png",
+    "price": 13.00,
+    "description": "Дерев'яна стійка для папуг, яка допомагає тренувати рівновагу та активність.",
+    "category": "top-recommendations",
+    "type": "parrots"
+  },
+  {
+    "id": "1",
+    "title": "SERA Purple Collar",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-rabbits/sera-purple-collar.png",
+    "price": 2.00,
+    "description": "М'який фіолетовий нашийник для кроликів, що забезпечує комфорт і контроль.",
+    "category": "top-recommendations",
+    "type": "rabbits"
+  },
+  {
+    "id": "2",
+    "title": "AGA Clinking Toy",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-rabbits/aga-clinking-toy.png",
+    "price": 2.00,
+    "description": "Іграшка з дзвіночками, яка стимулює активність і цікавість кроликів.",
+    "category": "top-recommendations",
+    "type": "rabbits"
+  },
+  {
+    "id": "3",
+    "title": "HARNO Rabbit Cage",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-rabbits/harno-rabbit-cage.png",
+    "price": 60.00,
+    "description": "Простора клітка для кроликів, що забезпечує достатньо місця для руху і відпочинку.",
+    "category": "top-recommendations",
+    "type": "rabbits"
+  },
+  {
+    "id": "4",
+    "title": "DORA Rabbit Brush",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-rabbits/dora-rabbit-brush.png",
+    "price": 10.00,
+    "description": "Щітка для догляду за шерстю кроликів, що забезпечує м'яке і ретельне розчісування.",
+    "category": "top-recommendations",
+    "type": "rabbits"
+  },
+  {
+    "id": "1",
+    "title": "AGA Bowl for Hamsters",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-hamsters/aga-bowl-for-hamsters.png",
+    "price": 2.00,
+    "description": "Зручна миска для годування хом'яків, виготовлена з безпечних матеріалів.",
+    "category": "top-recommendations",
+    "type": "hamsters"
+  },
+  {
+    "id": "2",
+    "title": "TISCO Toy Wheel",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-hamsters/tisco-toy-wheel.png",
+    "price": 9.00,
+    "description": "Ігрове колесо для активних ігрових сесій вашого хом'яка, допомагає підтримувати його здоров'я.",
+    "category": "top-recommendations",
+    "type": "hamsters"
+  },
+  {
+    "id": "3",
+    "title": "STERCO Rainbow Balls",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-hamsters/sterco-rainbow-balls.png",
+    "price": 3.50,
+    "description": "Яскраві різнокольорові м'ячики, що стимулюють інтерес і активність хом'яків.",
+    "category": "top-recommendations",
+    "type": "hamsters"
+  },
+  {
+    "id": "4",
+    "title": "AGA Green Cage",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-hamsters/aga-green-cage.png",
+    "price": 25.00,
+    "description": "Зелена клітка для хом'яків, що забезпечує комфорт та простір для активності.",
+    "category": "top-recommendations",
+    "type": "hamsters"
+  },
+  {
+    "id": "1",
+    "title": "DUCCA Air Pump",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-fish/ducca-air-pump.png",
+    "price": 42.00,
+    "description": "Насос для акваріума, який забезпечує постійний потік повітря та підтримує комфортні умови для риб.",
+    "category": "top-recommendations",
+    "type": "fish"
+  },
+  {
+    "id": "2",
+    "title": "TISCO 50 Liter Aquarium",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-fish/tisco-50-liter-aquarium.png",
+    "price": 70.00,
+    "description": "Місткий акваріум об'ємом 50 літрів для утримання рибок різних видів.",
+    "category": "top-recommendations",
+    "type": "fish"
+  },
+  {
+    "id": "3",
+    "title": "VEGA Fish Castle",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-fish/vega-fish-castle.png",
+    "price": 6.00,
+    "description": "Декоративний замок для акваріумів, що створює унікальну атмосферу для рибок.",
+    "category": "top-recommendations",
+    "type": "fish"
+  },
+  {
+    "id": "4",
+    "title": "TISCO Landing Net",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-fish/tisco-landing-net.png",
+    "price": 4.00,
+    "description": "Сітка для вилову риб з акваріума, легка у використанні та зручна.",
+    "category": "top-recommendations",
+    "type": "fish"
+  }
+]
