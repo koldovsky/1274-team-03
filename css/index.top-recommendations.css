@@ -12,6 +12,7 @@
     padding-top: 30px;
     border-top: 1px solid var(--category-button-border-color);
     text-align: justify;
+    min-height: 2186px;
 }
 
 .top-recommendations__title {
@@ -105,6 +106,7 @@
 @media (min-width: 478px) {
     .top-recommendations__products {
         grid-template-columns: 1fr 1fr;
+        min-height: 1300px;
     }
 }
 
@@ -117,9 +119,11 @@
 @media (min-width: 991px) {
     .top-recommendations__products {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        min-height: 465px;
     }
 
     .top-recommendations__title {
-        font-size: 50px;;
+        font-size: 50px;
+        ;
     }
 }
