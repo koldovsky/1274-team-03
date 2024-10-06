@@ -10,11 +10,18 @@
   cursor: pointer;
   text-align: center;
   font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .button:hover {
   background-color: var(--button-hover-color);
   color: var(--button-text-hover-color);
+  border-color: var(--button-hover-color);
+}
+
+.buttonn:active {
+  color: var(--buttom-text-hover-color);
+  background-color: var(--active-button-hover);
 }
 
 .button--shop-page {

@@ -1,38 +1,263 @@
 [
-    {
-      "id": "1",
-      "title": "DORA Metal Pet Brush",
-      "image": "img/section-trending-products/dora-metal-pet-brush.png",
-      "description": "A high-quality metal brush for pets.",
-      "price": 15.00
-    },
-    {
-      "id": "2",
-      "title": "Kitten's Heaven Set",
-      "image": "img/section-trending-products/kittens-heaven-set.png",
-      "description": "A fun set of toys for kittens.",
-      "price": 12.00
-    },
-    {
-      "id": "3",
-      "title": "OPTY Pet Carrier",
-      "image": "img/section-trending-products/opty-pet-carrier.png",
-      "description": "A comfortable pet carrier for small animals.",
-      "price": 8.00
-    },
-    {
-      "id": "4",
-      "title": "AGA Rope Toy",
-      "image": "img/section-trending-products/aga-rope-toy.png",
-      "description": "A durable rope toy for pets.",
-      "price": 5.00
-    },
-    {
-      "id": "5",
-      "title": "DORA Pet Carrier",
-      "image": "img/section-trending-products/dora-pet-carrier.png",
-      "description": "A stylish pet carrier.",
-      "price": 23.00
-    }
-  ]
-  
+  {
+    "id": "1",
+    "title": "DORA Metal Pet Brush",
+    "image": "img/section-trending-products/dora-metal-pet-brush.png",
+    "description": "A high-quality metal brush for pets.",
+    "category": "trending-products",
+    "type": "all",
+    "price": 15.00
+  },
+  {
+    "id": "2",
+    "title": "Kitten's Heaven Set",
+    "image": "img/section-trending-products/kittens-heaven-set.png",
+    "description": "A fun set of toys for kittens.",
+    "category": "trending-products",
+    "type": "cats",
+    "price": 12.00
+  },
+  {
+    "id": "3",
+    "title": "OPTY Pet Carrier",
+    "image": "img/section-trending-products/opty-pet-carrier.png",
+    "description": "A comfortable pet carrier for small animals.",
+    "category": "trending-products",
+    "type": "cats",
+    "price": 8.00
+  },
+  {
+    "id": "4",
+    "title": "AGA Rope Toy",
+    "image": "img/section-trending-products/aga-rope-toy.png",
+    "description": "A durable rope toy for pets.",
+    "category": "trending-products",
+    "type": "all",
+    "price": 5.00
+  },
+  {
+    "id": "5",
+    "title": "DORA Pet Carrier",
+    "image": "img/section-trending-products/dora-pet-carrier.png",
+    "description": "A stylish pet carrier.",
+    "category": "trending-products",
+    "type": "all",
+    "price": 23.00
+  },
+  {
+    "id": "6",
+    "title": "DOGGY Fun Set",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-dogs/doggy-fun-set.png",
+    "description": "This is the perfect set to play with your dog! It includes a safety glove, a strong braided rope, and a toy that is so cool to bite and pull!",
+    "category": "top-recommendations",
+    "type": "dogs",
+    "price": 6.00
+  },
+  {
+    "id": "7",
+    "title": "DUNA Pillow Bed",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-dogs/duna-pillow-bed.png",
+    "price": 10.00,
+    "description": "Present your pup a totally comfortable bed! It is super soft yet easy to clean. The pillow is lightweight, so you can move it to any room or take it with your when traveling.",
+    "category": "top-recommendations",
+    "type": "dogs"
+  },
+  {
+    "id": "8",
+    "title": "AGA Retractable Leash",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-dogs/aga-retractable-leash.png",
+    "price": 33.00,
+    "description": "This leash is a great choice dogs of medium size. It gives them freedom of movement but, at the same time, will help you stop your pet from running too away from you.",
+    "category": "top-recommendations",
+    "type": "dogs"
+  },
+  {
+    "id": "9",
+    "title": "DOGGY 2-Bunch Toy",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-dogs/doggy-2-bunch-toy.png",
+    "price": 5.00,
+    "description": "Does your dog like to chew and pull on a toy? It will love this little thing! The toy consists of a plastic ring and two thick rope tassels for your active games.",
+    "category": "top-recommendations",
+    "type": "dogs"
+  },
+  {
+    "id": "10",
+    "title": "AGA Mice Set",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-cats/aga-mice-set.png",
+    "price": 3.00,
+    "description": "This set of 3 colorful mice will entertain your cat for a long time. They are made of durable wool and feel very similar to real mice. Inside each mouse, there is a bell that attracts your pet's attention.",
+    "category": "top-recommendations",
+    "type": "cats"
+  },
+  {
+    "id": "11",
+    "title": "VITALIFE 2-Bowls Set",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-cats/vitalife-2-bowls-set.png",
+    "price": 9.00,
+    "description": "These two ceramic bowls on a metal stand will fit perfectly into your decor and are completely pet-safe. Your cat will look forward to be fed!",
+    "category": "top-recommendations",
+    "type": "cats"
+  },
+  {
+    "id": "12",
+    "title": "AGA Leash & Collar",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-cats/aga-leash-collar.png",
+    "price": 13.00,
+    "description": "Does your cat like to walk outside with you? Buy it a collar and leash so you don't lose sight of your pet! The set is made of high-quality, strong, but soft material that will not harm the animal.",
+    "category": "top-recommendations",
+    "type": "cats"
+  },
+  {
+    "id": "13",
+    "title": "DUNA Gray Bed",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-cats/duna-gray-bed.png",
+    "price": 25.00,
+    "description": "Does your cat dislike beds and prefer to sleep on your face? You just haven't tried DUNA beds! They are so comfortable and soft that your cat will definitely appreciate them.",
+    "category": "top-recommendations",
+    "type": "cats"
+  },
+  {
+    "id": "14",
+    "title": "DORA Hanging Mirror",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-parrots/dora-hanging-mirror.png",
+    "price": 14.00,
+    "description": "We do not know why birds love to look in the mirror so much, but we do know that a mirror from the DORA brand is a great gift for your pet. It is really easy to hang it in the cage to the delight of your small friend.",
+    "category": "top-recommendations",
+    "type": "parrots"
+  },
+  {
+    "id": "15",
+    "title": "VETRA Hanging Nest",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-parrots/vetra-hanging-nest.png",
+    "price": 8.00,
+    "description": "Sometimes you really want to hide from everyone! Thanks to this hanging nest, your parrot will have enough privacy.",
+    "category": "top-recommendations",
+    "type": "parrots"
+  },
+  {
+    "id": "16",
+    "title": "DORA Wood Swing",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-parrots/dora-wood-swing.png",
+    "price": 7.00,
+    "description": "Provide your parrot with a place to perch and swing! This swing is easily attached to the inside of the cage and swings back and forth freely.",
+    "category": "top-recommendations",
+    "type": "parrots"
+  },
+  {
+    "id": "17",
+    "title": "OPTY Wooden Stand",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-parrots/opty-wooden-stand.png",
+    "price": 13.00,
+    "description": "This ladder stand is made of wood and is sure to please your pets. The stand is suitable for large cages and is designed for 3-4 birds.",
+    "category": "top-recommendations",
+    "type": "parrots"
+  },
+  {
+    "id": "18",
+    "title": "SERA Purple Collar",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-rabbits/sera-purple-collar.png",
+    "price": 2.00,
+    "description": "Nice and comfortable collar for your rabbit made of soft braided material. You will love its rich color, and your pet will appreciate the ringing ball on the collar.",
+    "category": "top-recommendations",
+    "type": "rabbits"
+  },
+  {
+    "id": "19",
+    "title": "AGA Clinking Toy",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-rabbits/aga-clinking-toy.png",
+    "price": 2.00,
+    "description": "This small toy will keep your pet entertained while you are away. The ball is made of durable rubber, and there is a bell inside. Your rabbit will love it!",
+    "category": "top-recommendations",
+    "type": "rabbits"
+  },
+  {
+    "id": "20",
+    "title": "HARNO Rabbit Cage",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-rabbits/harno-rabbit-cage.png",
+    "price": 60.00,
+    "description": "A middle-sized cage for your pet. Created for easy access and interaction, this cage features simple, no-tool assembly. Make the new home of your rabbit even more comfy!",
+    "category": "top-recommendations",
+    "type": "rabbits"
+  },
+  {
+    "id": "21",
+    "title": "DORA Rabbit Brush",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-rabbits/dora-rabbit-brush.png",
+    "price": 10.00,
+    "description": "Maintain your pet's coat in perfect condition with this brush. It will help get rid of tangles and shedding hair without causing discomfort to the rabbit.",
+    "category": "top-recommendations",
+    "type": "rabbits"
+  },
+  {
+    "id": "22",
+    "title": "AGA Bowl for Hamsters",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-hamsters/aga-bowl-for-hamsters.png",
+    "price": 2.00,
+    "description": "The plastic hamster bowl is stylish and safe to use. You can pour water or put dry food in there for your pet.",
+    "category": "top-recommendations",
+    "type": "hamsters"
+  },
+  {
+    "id": "23",
+    "title": "TISCO Toy Wheel",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-hamsters/tisco-toy-wheel.png",
+    "price": 9.00,
+    "description": "Hamsters and guinea pigs love to run in the wheel! Not sure? Buy and see for yourself! Give your pet their favorite wheel for crazy runs.",
+    "category": "top-recommendations",
+    "type": "hamsters"
+  },
+  {
+    "id": "24",
+    "title": "STERCO Rainbow Balls",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-hamsters/sterco-rainbow-balls.png",
+    "price": 3.50,
+    "description": "Great balls to awake the natural instinct to chew in your hamster, rat, or guinea pig. The balls are long-lasting and made of safe materials (willow twigs inside).",
+    "category": "top-recommendations",
+    "type": "hamsters"
+  },
+  {
+    "id": "25",
+    "title": "AGA Green Cage",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-hamsters/aga-green-cage.png",
+    "price": 25.00,
+    "description": "This cage is made for active hamsters that enjoy exploring their new home. The cages features easy access and is compatible with other AGA accessories for hamsters.",
+    "category": "top-recommendations",
+    "type": "hamsters"
+  },
+  {
+    "id": "26",
+    "title": "DUCCA Air Pump",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-fish/ducca-air-pump.png",
+    "price": 42.00,
+    "description": "The DUCCA air pump provides aeration for rich, oxygenated water. It operates really quietly and without vibrations, so you won't be disturbed even if the aquarium is in your bedroom.",
+    "category": "top-recommendations",
+    "type": "fish"
+  },
+  {
+    "id": "27",
+    "title": "TISCO 50 Liter Aquarium",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-fish/tisco-50-liter-aquarium.png",
+    "price": 70.00,
+    "description": "Looking for a new home for your fish? This aquarium may be the right choice for you. It features a medium size perfect for any room.",
+    "category": "top-recommendations",
+    "type": "fish"
+  },
+  {
+    "id": "28",
+    "title": "VEGA Fish Castle",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-fish/vega-fish-castle.png",
+    "price": 6.00,
+    "description": "Aquarium decoration in the form of a real castle will delight your eyes, surprise guests, and serve as additional entertainment for your fish.",
+    "category": "top-recommendations",
+    "type": "fish"
+  },
+  {
+    "id": "29",
+    "title": "TISCO Landing Net",
+    "image": "img/section-top-recommendations/section-top-recommendations-for-fish/tisco-landing-net.png",
+    "price": 4.00,
+    "description": "This net is indispensable when you need to clean your aquarium. This accessory from a reliable manufacturer will serve you for a really long time.",
+    "category": "top-recommendations",
+    "type": "fish"
+  }
+]
