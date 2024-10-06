@@ -1,0 +1,90 @@
+.contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Три рівні стовпці */
+  gap: 40px; /* Відступи між стовпцями */
+  padding: 40px 80px; /* Збільшені відступи з боків */
+  background-color: var(--accent-color);
+}
+
+.title-tel, .text-link, .form-buttom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Вирівнювання елементів по лівому краю */
+}
+
+.contact__title {
+  font-size: 12px;
+  color: var(--arrow-link-color); /* Колір "CALL US" */
+  margin-bottom: 10px;
+}
+
+.contact__tel-number {
+  font-family: 'Baloo 2', sans-serif; /* Шрифт для номеру телефону */
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--brand-color);
+  margin-top: 10px;
+}
+
+.contact__tel-link {
+  text-decoration: none;
+  color: var(--brand-color);
+  transition: border-bottom 0.3s;
+}
+
+.contact__tel-link:hover {
+  border-bottom: 2px solid var(--brand-color); /* Лінія під текстом при наведенні */
+}
+
+.contact__info-text {
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px; /* Відступ між текстом і "Sale Week" */
+}
+
+.contact__info-link {
+  color: black; /* "Sale Week" чорний */
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.contact__info-link span {
+  color: var(--arrow-link-color); /* Колір стрілки */
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Вирівнювання форми і кнопки по лівому краю */
+  width: 100%; /* Забезпечує, що форма займає всю ширину своєї третини */
+}
+
+.contact__form-input,
+.contact__form-submit {
+  width: 100%; /* Інпут і кнопка однакового розміру по ширині */
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.contact__form-input {
+  border: 2px solid rgb(244, 230, 226); /* Колір бордера інпуту */
+  background-color: rgb(244, 230, 226); /* Заливка інпуту */
+  color: #3c3731;
+  margin-bottom: 10px; /* Відступ між полем вводу і кнопкою */
+}
+
+.contact__form-submit {
+  border: none;
+  background-color: #fce6d4; /* Заливка кнопки */
+  color: var(--brand-color); /* Текст кнопки */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact__form-submit:hover {
+  background-color: var(--button-hover-color); /* Колір заливки при наведенні */
+}
