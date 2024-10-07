@@ -1,4 +1,14 @@
 function init() {
+<<<<<<< HEAD
+    import('./index.trending-products.js')
+    import('./index.top-recommendations.js');
+    import('./index.product-list.js');
+    import('./index.frequently-asked-question.js');
+    import('./index.promotion.js');
+    import('./index.our-news-and-articles.js');
+    import('./index.our-new-arrivals.js');
+    import('./index.pets-product-discount.js');
+=======
   import("./index.trending-products.js");
   import("./index.products-service.js");
   import("./index.product-list.js");
@@ -8,6 +18,7 @@ function init() {
   import("./index.promotion.js");
   import("./index.our-news-and-articles.js");
   import("./index.our-new-arrivals.js");
+>>>>>>> 2eeecfb0548702028100b89405f25bb51328be16
 }
 
 const totalPartials = document.querySelectorAll(

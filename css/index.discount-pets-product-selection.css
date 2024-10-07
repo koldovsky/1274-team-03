@@ -9,8 +9,6 @@
   font-weight: 400;
   word-wrap: break-word;
   z-index: 1
-  
-  
 }
 
 .pets-product-discount__container {
@@ -21,13 +19,13 @@
   margin: 0 auto;
 }
 
-.pets-product-discount__item {
+.pets-product-discount__container .pets-product-discount__item {
   position: relative;
   width: 48%; 
   max-width: 600px;
 }
 
-.pets-product-discount__item img {
+.pets-product-discount__container .pets-product-discount__item img {
   width: 100%;
   border-radius: 10px;
 }
@@ -151,54 +149,67 @@ em {
   color: var(--accent-color);
   background-color: var(--brand-button-color);
 }
-
-.brands-carousel {
+.pets-product-discount-car{
   display: flex;
-  align-items: center;
   justify-content: center;
-  position: relative;
-  margin: 20px 0;
+  align-items: center;
+  flex-direction: column;
 }
 
-.brands-carousel__prev,
-.brands-carousel__next {
-  background-color: transparent;
+.brand-carousel {
+  position: absolute;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: max-content;
+}
+.brand-carousel-inner-wrapper{
+  width: 70%; 
+  overflow: hidden; 
+}
+
+.carousel-img {
+  width: 170px;
+  gap: 40px;
+  background-color: white;
+  margin: 0 10px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
   border: none;
-  font-size: 24px;
+  font-size: 2rem;
   cursor: pointer;
+  z-index: 100;
   padding: 10px;
 }
 
-.brands-carousel__track-wrapper {
-  overflow: hidden;
-  width: 80%; 
+.carousel-control-prev {
+  left: 10%;
   display: flex;
-  justify-content: center;
 }
 
-.brands-carousel__track {
-  display: flex;
-  transition: transform 0.5s ease;
+.carousel-control-next {
+  right: 10%;
 }
 
-.brands-carousel__item {
-  min-width: 150px; 
-  height: 80px; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 10px;
-  background-color: var(--carousel-background-color); 
-  border-radius: 0px; 
-}
-.brands-carosel-q{
-  width: 41px;
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.brands-carousel__item img {
-  width: 100px;
-  height: auto; 
-}
+
+
+
 @media (max-width: 768px) {
   .pets-product-discount__container {
     flex-direction: column;
