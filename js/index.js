@@ -6,6 +6,7 @@ function init() {
     import('./index.promotion.js');
     import('./index.our-news-and-articles.js');
     import('./index.our-new-arrivals.js');
+    import('./index.pets-product-discount.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
