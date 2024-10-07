@@ -4,13 +4,7 @@ import { ProductsService } from "./index.products-service.js";
 export class ProductList {
   constructor() {
     this.productsService = new ProductsService();
-    this.listenForProductsRender();
-  }
-
-  listenForProductsRender() {
-    document.addEventListener("productsRendered", () => {
-      this.addEventListeners();
-    });
+    this.addEventListeners();
   }
 
   addEventListeners() {

@@ -1,3 +1,5 @@
+import { ProductList } from "./index.product-list.js";
+
 const response = await fetch('api/products.json');
 const products = await response.json();
 
@@ -32,8 +34,7 @@ function renderAllProducts(tabsInner) {
         renderProductsForTab(tabsInner[i], getProductByType(types[i]));
     }
 
-    const event = new Event("productsRendered");
-    document.dispatchEvent(event);
+    new ProductList();
 }
 
 function renderButtons(tabsInner, buttons) {
