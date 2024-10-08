@@ -11,6 +11,7 @@ function init() {
   import('./index.pets-product-discount.js');
   import('./index.any-products.js');
   import('./index.dry-food-treats.js');
+  import("./index.testimonials-by-our-client.js");
 
 }
 

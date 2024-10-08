@@ -8,11 +8,17 @@
   z-index: 0;
   overflow: hidden;
 }
+
 .testimonials__title-container {
   padding: 0 15px;
   display: flex;
   flex-direction: column;
 }
+
+.coment {
+  color: #ed6435;
+}
+
 .testimonials__title {
   font-size: clamp(30px, 2vw, 50px);
   font-weight: bold;
@@ -20,10 +26,12 @@
   text-align: center;
   color: var(--text-title-color);
 }
+
 .testimonials__svg-container {
   margin: 25px 0 0 0;
   text-align: center;
 }
+
 .testimonials__description {
   margin: 20px 0 0 0;
   text-align: center;
@@ -31,7 +39,31 @@
   color: var(--text-color);
 }
 
-.carousel {
+@media (min-width: 320px) {
+  .testimonials-by-our-client
+    .carousel
+    .testimonials-by-our-client__carousel-client {
+    flex: 0 0 100%;
+  }
+}
+
+@media (min-width: 750px) {
+  .testimonials-by-our-client
+    .carousel
+    .testimonials-by-our-client__carousel-client {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .testimonials-by-our-client
+    .carousel
+    .testimonials-by-our-client__carousel-client {
+    flex: 0 0 33.33%;
+  }
+}
+
+css Копіювати код .carousel {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -39,8 +71,17 @@
 
 .carousel__inner {
   display: flex;
-  flex-direction: row;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out; /* Плавний перехід */
+}
+
+.testimonials-by-our-client__carousel-client {
+  flex: 0 0 100%;
+  /* Додано flex, щоб кожен елемент мав ширину 100% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 .testimonials-item {
@@ -51,57 +92,29 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-sizing: border-box;
   margin: 5px;
 }
-.testimonials-by-our-client__carousel-client {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 18px;
-  border: 2px solid #fffdfd;
-  border-radius: 10px;
-}
-@media (max-width: 1200px) {
-  .card {
-    flex: 0 0 80%;
-  }
-}
 
-@media (max-width: 600px) {
-  .card {
-    flex: 0 0 100%;
-  }
-}
 .carousel-button-prev,
 .carousel-button-next {
-  display: flex;
-  flex-direction: row;
   position: absolute;
-  z-index: 2;
-  top: 40%;
+  top: 50%;
   transform: translateY(-50%);
-  font-size: 20px;
-  padding: 10px 20px;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-
-  background-color: rgb(255, 255, 255);
-  width: 30px;
-  height: 30px;
-  color: white;
-  transition: background-color 0.3s;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 10px;
   cursor: pointer;
 }
 
 .carousel-button-prev {
-  left: 1px;
+  left: 10px;
 }
 
 .carousel-button-next {
-  right: 1px;
+  right: 10px;
 }
+
 .testimonials-by-our-client__carousel-client-image {
   width: 120px;
   height: 120px;
