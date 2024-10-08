@@ -1,7 +1,7 @@
 const carousel = document.querySelector(".new-arrivals__carousel-arrivals");
 const carouselInner = carousel.querySelector(".new-arrivals__carousel-arrivals-inner");
-const prevButton = carousel.querySelector(".carousel-control-prev");
-const nextButton = carousel.querySelector(".carousel-control-next");
+const prevButton = carousel.querySelector(".carousel-control-prev1");
+const nextButton = carousel.querySelector(".carousel-control-next1");
 
 let slidesPerView = getSlidesPerView();
 let slides = Array.from(carouselInner.children);
