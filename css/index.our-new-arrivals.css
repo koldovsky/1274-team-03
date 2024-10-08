@@ -104,8 +104,8 @@
     box-sizing: border-box;
 }
 
-.carousel-control-next,
-.carousel-control-prev {
+.carousel-control-next1,
+.carousel-control-prev1 {
     top: 30%;
     width: 24px;
     height: 24px;
@@ -120,8 +120,8 @@
     position: absolute;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+.carousel-control-prev-icon1,
+.carousel-control-next-icon1 {
     width: 50%;
     height: 50%;
 }
