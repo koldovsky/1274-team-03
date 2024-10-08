@@ -2,7 +2,6 @@
     padding: 90px 20px 60px;
     max-width: 1200px;
     text-align: center;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -45,18 +44,13 @@
     margin-top: 40px;
 }
 
-.top-recommendations__categories {
-    margin-left: -15px;
-}
-
 .top-recommendations__btn-container {
-    margin-left: -15px;
     margin-bottom: 0;
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
     flex: 1;
-    justify-content: center;
+    scroll-behavior: smooth;
 }
 
 .top-recommendations__category-btn {
@@ -109,6 +103,12 @@
 @media (min-width: 478px) {
     .top-recommendations__products {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 718px) {
+    .top-recommendations__btn-container {
+        justify-content: center;
     }
 }
 
