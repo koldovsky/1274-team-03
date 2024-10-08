@@ -6,6 +6,15 @@
   background-color: var(--accent-color);
 }
 
+/* Адаптивний дизайн для невеликих екранів */
+@media (max-width: 768px) {
+  .contact {
+    grid-template-columns: 1fr; /* Один стовпець */
+    gap: 20px; /* Зменшені відступи між елементами */
+    padding: 20px 40px; /* Зменшені відступи з боків */
+  }
+}
+
 .title-tel, .text-link, .form-buttom {
   display: flex;
   flex-direction: column;
