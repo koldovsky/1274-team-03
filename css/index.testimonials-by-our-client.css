@@ -1,20 +1,111 @@
-.testimonials-by-our-client__title {
-  max-width: 300px;
-  margin: auto;
-  font-size: 30px;
-  font-family: var(--font-family-tytle);
-  color: var(--text-tytle-color);
-  font-weight: 700;
+.testimonials-by-our-client {
+  padding: 90px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.testimonials__title-container {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+.testimonials__title {
+  font-size: clamp(30px, 2vw, 50px);
+  font-weight: bold;
+  font-family: var(--font-family-title);
+  text-align: center;
+  color: var(--text-title-color);
+}
+.testimonials__svg-container {
+  margin: 25px 0 0 0;
   text-align: center;
 }
-
-.testimonials-by-our-client__description{
-  max-width: 510px;
-  margin: auto;
-  font-family: "PT Sans", sans-serif;
-  color: var(--text-color);
-  font-size: 19px;
+.testimonials__description {
+  margin: 20px 0 0 0;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 16px;
+  font-size: 19px;
+  color: var(--text-color);
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel__inner {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonials-item {
+  width: 350px;
+  height: 550px;
+  border: 3px solid #ffe6d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 5px;
+}
+.testimonials-by-our-client__carousel-client {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 18px;
+  border: 2px solid #fffdfd;
+  border-radius: 10px;
+}
+@media (max-width: 1200px) {
+  .card {
+    flex: 0 0 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex: 0 0 100%;
+  }
+}
+.carousel-button-prev,
+.carousel-button-next {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(255, 255, 255);
+  width: 30px;
+  height: 30px;
+  color: white;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.carousel-button-prev {
+  left: 1px;
+}
+
+.carousel-button-next {
+  right: 1px;
+}
+.testimonials-by-our-client__carousel-client-image {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  object-fit: cover;
 }
