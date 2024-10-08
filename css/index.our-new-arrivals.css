@@ -104,7 +104,7 @@
     box-sizing: border-box;
 }
 
-.carousel-control-next,
+/* .carousel-control-next,
 .carousel-control-prev {
     top: 30%;
     width: 24px;
@@ -124,6 +124,29 @@
 .carousel-control-next-icon {
     width: 50%;
     height: 50%;
+} */
+
+.carousel__button {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel__button--prev {
+    left: 10px;
+}
+
+.carousel__button--next {
+    right: 10px;
+}
+
+.carousel__button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 @media (min-width: 768px) {

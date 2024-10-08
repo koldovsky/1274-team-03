@@ -12,8 +12,8 @@
 }
 .promotion__content
 {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 0px;
 }
 .promotion__info
 {
@@ -21,14 +21,13 @@
     font-weight: 400;
     justify-content: center;
     line-height: 27.2px;
-    max-width: 100%;
     overflow-wrap: break-word;
     flex-direction: column;
     flex-basis: 100%;
     box-sizing: border-box;
     vertical-align: baseline;
     text-align: left;
-    width: 327px;
+    max-width: 500px;
 }
 .promotion__title-text
 {
