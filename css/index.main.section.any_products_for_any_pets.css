@@ -5,6 +5,7 @@
   flex-direction: column;
   margin-bottom: 50px;
 }
+
 .any-products-for-any-pets__title {
   text-align: center;
   font-size: 1.8rem;
@@ -12,22 +13,104 @@
   margin-top: 70px;
 }
 .any-products-for-any-pets__img-bone {
+  display: flex;
+  justify-content: center; /* Центрування по горизонталі */
+  align-items: center; /* Центрування по вертикалі */
   height: 40px;
   width: 80px;
+  margin: 0 auto; 
+}
+.any-products-for-any-pets__p{
+  text-align: center;
+  color:  #829199;
 }
 
-#carousel_animals {
-  max-width: 529px;
-  margin: 0 auto;
-  border: 4px solid var(--button-hover-color);
-  border-radius: 10px;
-  padding: 10px;
-  overflow: hidden;
+.carousel {
+  position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
-.carousel-item
-  img.any-products-for-any-pets__carousel__pets__inner__slide__img {
-  max-width: 70px;
-  max-height: 70px;
-  height: auto;
+
+
+.carousel__inner {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.5s ease-in-out;
+}
+.card{
+  width: 260px; /* Задаємо ширину картки */
+  height: 350px; /* Задаємо висоту картки */
+  border: 2px solid #ffe6d4; /* Червоний бордер товщиною 2px */
+  display: flex; /* Використовуємо flexbox для центрування */
+  justify-content: center; /* Центруємо горизонтально */
+  align-items: center; /* Центруємо вертикально */
+  flex-direction: column; /* Розташування елементів у стовпчик */
+  box-sizing: border-box; /* Враховуємо бордер у розмірах картки */
+  margin: 5px; /* Додаємо відступ між картками */
+
+}
+.product-card {
+  display: flex; /* Включаємо flexbox для .product-card */
+  flex-wrap: wrap; /* Дозволяємо переносити елементи на новий ряд */
+  justify-content: center; /* Центруємо картки */
+  padding: 18px;
+  border: 2px solid #fffdfd; /* Білий бордер товщиною 2px */
+  border-radius: 10px; /* Заокруглення кутів */
+}
+@media (max-width: 1200px) {
+  .card {
+    flex: 0 0 80%; /* Дві картки в ряд */
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex: 0 0 100%; /* Одна картка в ряд */
+  }
+}
+.carousel-button-prev,
+.carousel-button-next {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: rgba(0, 0, 0, 0.7); /* Напівпрозорий чорний фон */
+  width: 30px;
+  height: 30px;
+  color: white; /* Білий колір тексту (стрілочок) */
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.carousel-button-prev {
+  left: 1px;
+}
+
+.carousel-button-next {
+  right: 1px;
+}
+.product-card__img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+  border-radius: 50%; /* Заокруглення картинок до кола */
+  object-fit: cover; 
+
+} 
+
+.card_p{
+  text-align: center;
+  color:  #829199;
+}
+.card-span{
+  color:  #45C1C7;
 }
