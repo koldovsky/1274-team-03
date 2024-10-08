@@ -60,11 +60,11 @@
 }
 @media (max-width: 1200px) {
   .card {
-    flex: 0 0 45%; /* Дві картки в ряд */
+    flex: 0 0 80%; /* Дві картки в ряд */
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .card {
     flex: 0 0 100%; /* Одна картка в ряд */
   }
