@@ -22,6 +22,7 @@
 }
 .any-products-for-any-pets__p{
   text-align: center;
+  color:  #829199;
 }
 
 .carousel {
@@ -38,10 +39,9 @@
   transition: transform 0.5s ease-in-out;
 }
 .card{
-  width: 250px; /* Задаємо ширину картки */
-  height: 400px; /* Задаємо висоту картки */
-  border: 2px solid #b61414; /* Червоний бордер товщиною 2px */
-  border-radius: 10px; /* Заокруглення кутів */
+  width: 260px; /* Задаємо ширину картки */
+  height: 350px; /* Задаємо висоту картки */
+  border: 2px solid #ffe6d4; /* Червоний бордер товщиною 2px */
   display: flex; /* Використовуємо flexbox для центрування */
   justify-content: center; /* Центруємо горизонтально */
   align-items: center; /* Центруємо вертикально */
@@ -54,7 +54,7 @@
   display: flex; /* Включаємо flexbox для .product-card */
   flex-wrap: wrap; /* Дозволяємо переносити елементи на новий ряд */
   justify-content: center; /* Центруємо картки */
-  padding: 20px;
+  padding: 18px;
   border: 2px solid #fffdfd; /* Білий бордер товщиною 2px */
   border-radius: 10px; /* Заокруглення кутів */
 }
@@ -82,24 +82,35 @@
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  border: 2px solid var(--buttom-text-hover-color);
-  background-color: var(--buttom-text-hover-color);
+  
+  background-color: rgba(0, 0, 0, 0.7); /* Напівпрозорий чорний фон */
   width: 30px;
   height: 30px;
-  color: var(--category-button-border-color);
+  color: white; /* Білий колір тексту (стрілочок) */
   transition: background-color 0.3s;
   cursor: pointer;
 }
 
 .carousel-button-prev {
-  left: 10px;
+  left: 1px;
 }
 
 .carousel-button-next {
-  right: 10px;
+  right: 1px;
 }
 .product-card__img {
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   margin-bottom: 10px;
+  border-radius: 50%; /* Заокруглення картинок до кола */
+  object-fit: cover; 
+
 } 
+
+.card_p{
+  text-align: center;
+  color:  #829199;
+}
+.card-span{
+  color:  #45C1C7;
+}
