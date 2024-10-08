@@ -10,6 +10,8 @@ function init() {
   import("./index.our-new-arrivals.js");
   import('./index.pets-product-discount.js');
   import('./index.any-products.js');
+  import('./index.dry-food-treats.js');
+
 }
 
 const totalPartials = document.querySelectorAll(
