@@ -1,219 +1,276 @@
+
 .dry-food {
-    padding: 50px;
-    background-color: #fbf4f2;
+  background-color: var(--background-color);
+  background-size: cover;
+  padding: 90px 23px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.dry-food__section {
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
+.dry-food-section__title {
+  font-family: var(--font-family-tytle);
+  font-size: 50px;
+  margin-bottom: 0;
+  color: var(--text-title-color);
 }
 
-.dry-food-section__title h2 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #333;
-    font-family: var(--font-family-tytle);
+#text-explain {
+  animation: pulse 1s infinite;
+  cursor: pointer;
 }
 
-.dry-food-section__icon img {
-    margin: 10px 0;
-    background-color: #fbf4f2;
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-.dry-food-section__subtitle {
-    font-size: 16px;
-    color: #8e8e8e;
-    margin-bottom: 40px;
-    margin-top: 15px;
+.dry-food-section__bone {
+  margin: 20px 0;
 }
 
-.dry-food-section__category-title {
-    font-size: 22px;
-    font-weight: 600;
-    text-align: left; 
-    margin-bottom: 10px;
-    color: #333;
-    position: relative;
-    font-family: var(--font-family-tytle);
-}
-
-.dry-food-section__category-title::after {
-    content: '';
-    display: block;
-    width: 34px; 
-    height: 3px;
-    background-color: #00a99d;
-    margin-top: 5px;
-    position: absolute;
-    left: 0; /
-}
-
-
-.dry-food-section__product {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.dry-food-section__product-content {
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.dry-food-section__product-image {
-    max-width: 100px;
-    margin-right: 20px;
-}
-
-
-.dry-food-section__product-title {
-    font-size: 14px;
-    font-weight: bold;
-    margin-right: 5px;
-}
-
-.dry-food-section__price-line {
-    width: 100%;
-    height: 2px;
-    background-color: #00a99d;
-    margin: 5px 0;
-}
-
-
-.dry-food-section__product-price {
-    font-size: 14px;
-    font-weight: bold;
-    color: #e74c3c;
-    margin-left: 10px; 
-}
-
-.dry-food-section__product-description {
-    font-size: 13px;
-    color: #666;
-    margin-top: 5px;
-    display: block;
-    max-width: 250px; 
+.dry-food-section__text-explain {
+  color: var(--text-color);
+  font-size: 19px;
+  cursor: pointer;
 }
 
 .dry-food-section__categories {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.food-section__category--dogs,
-.food-section__category--cats,
-.food-section__category--other {
-    width: 30%; 
+.dry-food-section__category {
+  flex: 1;
+  padding: 16px;
+  box-sizing: border-box;
+  text-align: left;
 }
 
+.dry-food-section__category-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-family-tytle);
+}
 
+.dry-food-section__category-title {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  color: var(--text-title-color);
+  position: relative;
+}
 
+.dry-food-section__category-title::after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 3px;
+  background-color: var(--brand-color);
+  margin-top: 10px;
+}
 
+.dry-food-section__product {
+  display: grid;
+  grid-gap: 21px;
+  grid-template-columns: 90px auto auto;
+  margin: 7.5px 0;
+}
 
+.dry-food-section__product-image {
+  width: 120px;
+  margin-right: 15px;
+  transition: transform 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.dry-food-section__product-image:active {
+  transform: scale(1.5);
+  z-index: 10;
+}
+
+.dry-food-section__product-content {
+  grid-column: 2 / 4;
+  grid-row: 1 / 4;
+  padding-left: 45px;
+}
+
+.dry-food-section__product-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-family-tytle);
+  font-weight: bold;
+  font-size: 21px;
+  margin: 0;
+  color: var(--text-title-color);
+}
+
+.underline {
+  flex-grow: 1;
+  margin-left: 4px;
+  border-bottom: 1px solid var(--subtitle-card-second-color);
+  height: 1px;
+  margin-top: 20px;
+}
+
+.dry-food-section__product-price {
+  color: var(--brand-color);
+}
+
+.dry-food-section__product-description {
+  color: var(--subtitle-card-second-color);
+  font-size: 17px;
+  font-family: var(--font-family);
+  margin-top: 2px;
+  opacity: 76%;
+}
+
+/* Media queries */
 @media (max-width: 1024px) {
-    .dry-food-section__categories {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-        grid-gap: 20px; 
-    }
+  .dry-food-section__categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
 
-    .food-section__category--dogs,
-    .food-section__category--cats,
-    .food-section__category--other {
-        width: 100%; 
-    }
+  .dry-food-section__product {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 
-    .dry-food-section__product {
-        display: flex;
-        flex-direction: row; 
-        align-items: flex-start; 
-    }
+  .dry-food-section__product-image {
+    max-width: 80px;
+  }
 
-    .dry-food-section__product-image {
-        max-width: 80px; 
-        margin-right: 15px;
-    }
+  .dry-food-section__product-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .dry-food-section__product-content {
-        display: flex;
-        flex-direction: column; 
-        align-items: flex-start;
-    }
+  .dry-food-section__product-title,
+  .dry-food-section__product-price {
+    font-size: 14px;
+  }
 
-    .dry-food-section__product-title,
-    .dry-food-section__product-price {
-        font-size: 14px; 
-    }
-
-    .dry-food-section__product-description {
-        font-size: 13px;
-        margin-top: 5px;
-        max-width: 100%;
-    }
+  .dry-food-section__product-description {
+    font-size: 13px;
+  }
 }
-
-
-
-
-
-
 
 @media (max-width: 768px) {
-    .dry-food-section__categories {
-        display: flex;
-        flex-direction: column;
-        gap: 20px; 
-    }
+  .dry-food-section__categories {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    .food-section__category--dogs,
-    .food-section__category--cats,
-    .food-section__category--other {
-        width: 100%; 
-    }
+  .dry-food-section__product-image {
+    width: 80px;
+  }
 
-    .dry-food-section__product {
-        flex-direction: row; 
-        align-items: flex-start;
-    }
+  .dry-food-section__product-content {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
 
-    .dry-food-section__product-image {
-        width: 80px; 
-        margin-right: 15px;
-    }
+  .dry-food-section__product-title,
+  .dry-food-section__product-price {
+    font-size: 13px;
+  }
 
-    .dry-food-section__product-content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        width: 100%;
-    }
+  .dry-food-section__product-description {
+    font-size: 12px;
+  }
 
-    .dry-food-section__product-title,
-    .dry-food-section__product-price {
-        font-size: 13px; 
-    }
+  .dry-food-section__title {
+    font-size: 28px;
+  }
 
-    .dry-food-section__product-description {
-        font-size: 12px;
-        margin-top: 5px;
-        max-width: 100%;
-    }
+  .dry-food-section__text-explain {
+    font-size: 14px;
+  }
 
-    .dry-food-section__title h2 {
-        font-size: 28px; 
-    }
+  .dry-food-section__category-title {
+    font-size: 18px;
+  }
+}
 
-    .dry-food-section__subtitle {
-        font-size: 14px; 
-    }
+@media (max-width: 576px) {
+  .dry-food-section__categories {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+  }
 
-    .dry-food-section__category-title {
-        font-size: 18px;
-    }
+  .dry-food-section__category-header {
+    margin-bottom: 5px;
+  }
+
+  .dry-food-section__product {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .dry-food-section__product-image {
+    width: 50px;
+  }
+
+  .dry-food-section__product-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .dry-food-section__product-title {
+    font-size: 12px;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .dry-food-section__product-price {
+    font-size: 12px;
+    color: var(--brand-color);
+    margin-left: auto;
+  }
+
+  .dry-food-section__product-description {
+    font-size: 10px;
+    margin-top: 4px;
+    color: var(--subtitle-card-second-color);
+  }
+
+  .dry-food-section__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .dry-food-section__text-explain {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .dry-food-section__category-title {
+    font-size: 14px;
+  }
 }

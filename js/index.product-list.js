@@ -6,6 +6,7 @@ export class ProductList {
     this.productsService = new ProductsService();
     this.addEventListeners();
   }
+
   addEventListeners() {
     document.querySelectorAll(".product-card__add-to-cart").forEach((btn) => {
       btn.addEventListener("click", this.addProductToCart.bind(this));
