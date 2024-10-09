@@ -1,15 +1,12 @@
 function init() {
-<<<<<<< HEAD
-    import('./index.trending-products.js')
-    import('./index.top-recommendations.js');
-    import('./index.product-list.js');
-    import('./index.frequently-asked-question.js');
-    import('./index.promotion.js');
-    import('./index.our-news-and-articles.js');
-    import('./index.our-new-arrivals.js');
-    import('./index.pets-product-discount.js');
-=======
->>>>>>> 791047f7c19e57cc80a96f8076a206c74b2de221
+  import('./index.trending-products.js')
+  import('./index.top-recommendations.js');
+  import('./index.product-list.js');
+  import('./index.frequently-asked-question.js');
+  import('./index.promotion.js');
+  import('./index.our-news-and-articles.js');
+  import('./index.our-new-arrivals.js');
+  import('./index.pets-product-discount.js');
   import("./index.trending-products.js");
   import("./index.products-service.js");
   import("./index.product-list.js");
@@ -19,14 +16,10 @@ function init() {
   import("./index.promotion.js");
   import("./index.our-news-and-articles.js");
   import("./index.our-new-arrivals.js");
-<<<<<<< HEAD
-=======
   import('./index.pets-product-discount.js');
   import('./index.any-products.js');
   import('./index.dry-food-treats.js');
   import("./index.testimonials-by-our-client.js");
-
->>>>>>> 791047f7c19e57cc80a96f8076a206c74b2de221
 }
 
 const totalPartials = document.querySelectorAll(
