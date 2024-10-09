@@ -19,7 +19,6 @@
   --accent-text-color: rgb(237, 100, 53);
   --button-text-color: rgb(69, 193, 199);
   --active-button-color: rgb(69, 193, 199);
-  --buttom-text-hover-color: #ed6435;
   --button-text-hover-color: #ed6435;
   --button-hover-color: #ffe6d4;
   --arrows-fone-color: #59534e;
@@ -45,6 +44,12 @@
   --carousel-background-color: #ffe6d4;
   --font-family-tytle: "Baloo 2", sans-serif;
   --text-title-color: rgb(60, 55, 49);
+  --text-overflow-color:#7c8d94 ;
+  --text-overflow-second-color:#948a7e ;
+  --button-carousel-hover:rgba(117, 112, 112, 0.5);
+  --button-carousel-border-color:rgba(255, 255, 255, 0.5 );
+  --button-carousel-background-color:rgba(255, 255, 255, 0.3);
+
 
   scroll-behavior: smooth;
   color: var(--text-color);

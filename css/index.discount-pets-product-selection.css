@@ -1,227 +1,331 @@
 .pets-product-discount {
-  position: relative;
-  min-width: 320px;
-  background-color:var(--background-color);
-  padding-bottom: 60px;
-  font-size: 17px;
-  line-height: 1.4;
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 400;
-  word-wrap: break-word;
-  z-index: 1
-}
-
-.pets-product-discount__container {
-  padding: 5% 15%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.pets-product-discount__container .pets-product-discount__item {
-  position: relative;
-  width: 48%; 
-  max-width: 600px;
-}
-
-.pets-product-discount__container .pets-product-discount__item img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.pets-product-discount__overlay {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  flex-direction: column;
   padding: 20px;
-  border-radius: 10px;
-  width: 80%;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: var(--background-color);
+  width: 100%;
+}
+
+/* Стилі для обох блоків */
+.pets-product-discount__content,
+.pets-product-discount__second-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%; /* Початково ширина блоку займатиме всю ширину контейнера */
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.pets-product-discount__content {
+  background-image: url(../img/selection-discount-product/fish-on-aquarium.png);
+}
+
+.pets-product-discount__second-content {
+  background-image: url(../img/selection-discount-product/pets-product.png);
+}
+
+.pets-product-discount__second-title{
+  position: absolute;
+  left: 40px;
+  top: 95px;
+  font-family: var(--font-family-tytle);
   color: var(--text-tytle-color);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+/* Стилі для тексту */
+.pets-product-discount__title {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Центруємо текст */
+  text-align: center;
+  font-family: var(--font-family-tytle);
+  color: var(--text-tytle-color);
+  font-weight: bold;
   margin: 0;
-  padding: 0;
-  line-height: 1.2;
-}
-.pets-product-discount__first-title{
-  font-family: var( --font-family-tytle);
-  font-size: 50px;
-  font-weight: bold;
-}
-.discover__link{
-  position: absolute;
-  top: 145px;
-  left: 150px;
-  text-decoration: none;
-  font-weight: bold;
-
-}
-.pets-product-discount__overlay .discover__link-text{
-  font-size: 20px;
-  text-decoration: none;
-  color: var(--link-title-color);
-  font-weight: bold;
-}
-.discover__link:hover{
-  color: var(--brand-color);
-  text-decoration: underline;
+  font-size: 2.5rem; /* Адаптивний розмір тексту */
 }
 
-.pets-product-discount__overlay .discover__link-arrow{
-  font-size: 20px;
-  color: var(--arrow-link-color);
-  font-weight: 700;
-  line-height: 15px;
-  cursor: pointer;
-  
-}
-.discover__link-arrow:hover{
-  text-decoration: underline;
-  color: var(--arrow-link-color);
-}
-.pets-product-discount__highlight_procent{
-  color: var(--brand-color);
-}
-.pets-product-discount__overlay__second {
+
+.pets-product-discount__overtitle {
   position: absolute;
+  top: 50px;
+  left: 130px;
+  transform: translateX(-50%);
+  font-family: var(--font-family);
+  color: var(--text-overflow-color);
+  font-weight: bold;
+}
+
+.pets-product-discount__price {
+  position: absolute;
+  top: 220px;
+  left: 50px;
+  font-family: var(--font-family);
+  color: var(--text-overflow-second-color);
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.pets-product-discount__accent-price, .pets-product-discount__accent {
+  color: var(--accent-text-color);
+  font-weight: bold;
+}
+
+.pets-product-discount__link {
+  position: absolute;
+  bottom: 5%;
   top: 50%;
   left: 50%;
-  transform: translate(-60%, -50%);
-  padding: 20px;
-  width: 80%;
-}
-.pets-product-discount__title-second {
-  position: absolute;
-  top: -50px;
-  font-size: 40px;
-  color: var(--text-tytle-color);
-  font-family: var(--font-family-tytle);
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-}
-
-.pets-product-discount__subtitle {
-  position: absolute;
-  top: -100px;
-  font-size: 15px;
-  font-family: var(--font-family);
-  color: var(--subtitle-card-color);
-  margin-bottom: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.pets-product-discount__overlay__second .pets-product-discount__price{
-  position: absolute;
-  top: 70px;
-  font-family: var(--font-family);
-}
-
-em {
-  font-size: 18px;
-  margin-top: 50px;
-  color: var(--subtitle-card-second-color);
-}
-
-.pets-product-discount__highlight {
-  color: var(--brand-color);
-  font-style: italic;
-  font-weight: bold;
-
-}
-.pets-product-discount__button {
-  position: absolute;
-  top: 130px;
-  display: inline-block;
-  padding: 10px 25px;
-  background-color: none;
-  color: var(--brand-button-color);
+  transform: translateX(-50%);
   text-decoration: none;
-  border-radius: 50px;
-  border: 1px solid var(--brand-button-color) ;
+  font-size: 1.2rem;
   font-weight: bold;
-  transition: .3s;
+  color: var(--link-title-color);
 }
+.pets-product-discount__second_link{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #FF5722; /* Колір тексту */
+  background-color: transparent; /* Прозорий фон */
+  border: 2px solid #FF5722; /* Рамка оранжевого кольору */
+  border-radius: 50px; /* Закруглені краї */
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
 
-.pets-product-discount__button:hover {
-  color: var(--accent-color);
-  background-color: var(--brand-button-color);
 }
-.pets-product-discount-car{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.brand-carousel {
+.pets-product-discount__link-second-text{
   position: absolute;
-  width: 100%; 
+  bottom: 50px;
+  left: 50px;
+  color: var(--accent-text-color);
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #FF5722; /* Колір тексту */
+  background-color: transparent; /* Прозорий фон */
+  border: 1px solid #FF5722; 
+  border-radius: 50px; 
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease; 
+}
+.pets-product-discount__link-second-text:hover{
+  background-color: var(--brand-button-color); 
+  color: var(--accent-color);
+}
+.pets-product-discount__link-arrow {
+  color: var(--button-text-color);
+}
+
+.pets-product-discount__link:hover {
+  text-decoration: underline;
+  color: var(--accent-text-color);
+}
+
+
+
+.pets-product-discount__carousel {
+  position: relative;
+  overflow: hidden;
+  width: 60%; /* Зменшуємо ширину каруселі до 80% */
+  margin: 20px auto; /* Вирівнюємо по центру з верхнім відступом */
+}
+
+.pets-product-discount__carousel-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: transform 0.5s ease;
 }
 
-.brand-carousel-inner {
+.pets-product-discount__carousel-items {
   display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: max-content;
-}
-.brand-carousel-inner-wrapper{
-  width: 70%; 
-  overflow: hidden; 
 }
 
-.carousel-img {
-  width: 170px;
-  gap: 40px;
-  background-color: white;
-  margin: 0 10px;
+.pets-product__carousel-image {
+  min-width: calc(100% / 6 - 20px); /* Вираховуємо ширину зображення з урахуванням відступу */
+  transition: transform 0.5s ease;
+  margin-right: 20px; /* Додаємо відступ між зображеннями */
+  background-color: var(--carousel-background-color);
 }
 
-.carousel-control-prev, .carousel-control-next {
+.pets-product-carousel__button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  font-size: 2rem;
+  background: var(--button-carousel-background-color); /* Прозорий фон */
+  color: var(--arrow-svg-collor); /* Колір іконки або тексту */
+  border: 1px solid var(--button-carousel-border-color); /* Прозорий обведений контур */
+  border-radius: 50%; /* Залишаємо круглу форму */
   cursor: pointer;
-  z-index: 100;
-  padding: 10px;
-}
-
-.carousel-control-prev {
-  left: 10%;
+  padding: 0;
+  width: 30px;
+  height: 30px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease; /* Анімація при наведенні */
 }
 
-.carousel-control-next {
-  right: 10%;
-}
-
-.carousel-control-prev:hover, .carousel-control-next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.pets-product-carousel__button:hover {
+  background: var(--button-carousel-hover); /* Робимо фон менш прозорим при наведенні */
 }
 
 
+.prev {
+  left: 1px;
+}
+
+.next {
+  right: 20px;
+}
 
 
-@media (max-width: 768px) {
-  .pets-product-discount__container {
-    flex-direction: column;
-    align-items: center;
+
+@media (max-width: 800px) {
+  .pets-product-discount__carousel {
+    width: 80%; /* Збільшуємо ширину каруселі на малих екранах */
   }
 
-  .pets-product-discount__item {
+  .pets-product__carousel-image {
+    min-width: calc(100% / 4 - 20px); /* Змінюємо кількість зображень до 4 */
+  }
+
+  .pets-product-carousel__button {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width:600px){
+  .pets-product-discount__carousel {
+    width: 90%; /* Збільшуємо ширину каруселі на малих екранах */
+  }
+
+  .pets-product__carousel-image {
+    min-width: calc(100% / 3 - 20px); /* Змінюємо кількість зображень до 4 */
+  }
+
+  .pets-product-carousel__button {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Адаптивність для мобільних екранів */
+@media (max-width: 480px) {
+  .pets-product-discount__carousel {
+    width: 80%; /* Робимо карусель на всю ширину */
+  }
+
+  .pets-product__carousel-image {
+    min-width: calc(100% / 2); /* Показуємо 2 зображення одночасно */
+  }
+
+  .pets-product-carousel__button {
+    width: 20px;
+    height: 20px;
+  }
+  .next{
+    align-items: end;
+  }
+}
+
+/* Адаптивність для ультрамалих екранів */
+@media (max-width: 300px) {
+  .pets-product__carousel-image {
+    min-width: 100%; /* Показуємо по одному зображенню */
+  }
+
+  .pets-product-carousel__button {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Адаптивність для великих екранів */
+@media  (min-width: 800px) and (max-width: 1024px)  {
+  .pets-product-discount__carousel {
+    width: 80%; /* Зменшуємо ширину на великих екранах */
+  }
+
+  .pets-product__carousel-image {
+    min-width: calc(100% / 5 - 20px); /* Показуємо 6 зображень */
+  }
+}
+
+
+
+@media (max-width: 300px){
+  .pets-product-discount__content,
+  .pets-product-discount__second-content{
     width: 100%;
-    margin-bottom: 20px;
+    height: 250px;
   }
-  .brands-carousel__item {
-    min-width: 120px;
+  .pets-product-discount__title,
+  .pets-product-discount__second-content{
+    font-size: 1.2rem;
+  }
 }
+/* Адаптивність для малих екранів */
+@media (max-width: 600px) {
+  .pets-product-discount__content,
+  .pets-product-discount__second-content {
+    width: 100%;
+    height: 350px; /* Зменшуємо висоту для мобільних екранів */
+  }
+  .pets-product-discount__link{
+    font-size: 1rem;
+    top: 50%;
+  }
+
+  .pets-product-discount__link-second-text{
+    bottom: 30px;
+  }
+  .pets-product-discount__title,
+  .pets-product-discount__second-title {
+    font-size: 1.8rem; /* Зменшений розмір тексту */
+  }
 }
 
+/* Адаптивність для середніх екранів */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .pets-product-discount__content,
+  .pets-product-discount__second-content {
+    width: 70%;
+    height: 500px; /* Трохи збільшуємо висоту */
+  }
+
+  .pets-product-discount__link{
+    top: 46%;
+  }
+  .pets-product-discount__title,
+  .pets-product-discount__second-title {
+    font-size: 2rem;
+  }
+}
+/* Адаптивність для великих екранів */
+@media (min-width: 1024px) {
+  .pets-product-discount {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .pets-product-discount__content,
+  .pets-product-discount__second-content {
+    width: 100%; /* Встановлюємо блоки поруч і робимо їх однакової ширини */
+    height: 400px; /* Висота залишається стабільною */
+  }
+}
